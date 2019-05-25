@@ -6,7 +6,7 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 11:31:57 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/25 13:40:48 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/05/25 13:44:46 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int 	main (int argc, char **argv)
 ** modification.
 ** It goes through the first string and performs string copy, storing the values
 ** from source1 to dest, then the function appends the second string to the end
-** of the dest, which is why on line 74 and 75  we keep incrementing a while
+** of the dest, which is why on lines 83 and 84  we keep incrementing a while
 ** it is not equal to '\0'.
 ** Calling the function first time writes string from argv[1] to placeholder.
 ** Calling the function second time it will keep incremamting placeholder until
