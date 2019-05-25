@@ -6,7 +6,7 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 15:05:37 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/25 15:24:32 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/05/25 15:43:22 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ char *ft_strcpy(char *s1, char *s2)
 	int i;
 
 	i = 0;
-
+	
+	if(s2 == NULL)
+		return(NULL);
 	while(s2[i])
 	{
 		s1[i] = s2[i];
@@ -30,27 +32,19 @@ char *ft_strcpy(char *s1, char *s2)
 	return(s1);
 }
 /*
-int ft_strlen(char *string);
 int main (void)
 {
-	char *source = "Run this big string and try to break it if null is missing";
-	char dest[ft_strlen(source) + 1];
+	char *source1 = "Run this string. Try to break it if null is missing";
+	char *source2 = NULL;
+	char dest1[] = "one two dfdfd dfdfd dfdfd d fdfd d dfdfd d dfdfdf d fdfd d";
+	char dest2[] = "Another test";
+	ft_strcpy(dest1, source1);
+	printf("|%s|\n", dest1);
+	ft_strcpy(dest2, source2);
+	printf("|%s|\n", dest2);
 
-	ft_strcpy(dest, source);
-	printf("|%s|\n", dest);
-	
-	printf("if copy is done properly, return 0:|%d|\n", strcmp(dest, source));
+	printf("if copy is done properly, return 0:|%d|\n", strcmp(dest1, source1));
 
 	return(0);
-}
-
-int ft_strlen(char *string)
-{
-	int i;
-
-	i = 0;
-	while(string[i])
-		i++;
-	return(i);
 }
 */
