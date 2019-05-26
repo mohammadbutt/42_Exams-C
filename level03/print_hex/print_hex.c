@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_hex_base.c                                   :+:      :+:    :+:   */
+/*   print_hex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/26 14:32:16 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/26 14:38:58 by mbutt            ###   ########.fr       */
+/*   Created: 2019/05/26 15:08:39 by mbutt             #+#    #+#             */
+/*   Updated: 2019/05/26 15:40:59 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h> /*for printf*/
-#include <stdlib.h>/*for atoi*/
+#include <unistd.h> /*write*/
+#include <stdlib.h> /*for atoi to test if ft_atoi works like atoi*/
+#include <stdio.h>  /*for printf*/
 
-/*Not an exam question*/
-/*Can also print binary if the second argument is changed to 2*/
-
-void	print_hex(unsigned int p, int base)
+void print_hex(unsigned int num)
 {
 	char *str;
-
-	str = "0123456789abcdef";
-	if (p == 0)
-		write (1, "0", 1);
 	
-	if(p >= base)
-		print_hex(p/base, base);
-	p = str[p%base];
-	write(1, &p, 1);
+	str = "0123456789abcdef";
+	if (num == 0)
+		write(1, "0", 1);
+	if(num >= 16)
+		print_hex(num/16);
+	num = str[num%16];
+	write(1, &num, 1);
 }
 
 int ft_atoi(char *str)
@@ -37,40 +33,46 @@ int ft_atoi(char *str)
 	int nb;
 	int sign;
 
-	nb = 0;
 	i = 0;
+	nb = 0;
 	sign = 1;
 
-	/*Increments/skips over whitespace in the beginning man isspace*/
-	while(str[i] == '\t' || str[i] == '\n' || str[i] == '\v' || \
-			str[i] == '\r' || str[i] == ' ')
+	/*Increments/skips over whitespaces*/
+	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v' || \
+			str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
 		i++;
-	
-	/*If two signs appear one after another,
-	  as such -- -+ +- ++ program stops and retrurs 0 */
-	if((str[i] == '-' || str[i] == '+') && (str[i+1] == '-' || str[i+1] == '+'))
-		return(0);
-
-	/*Changes sign to -1 if [i] is '-' and [i+1] is a digit*/
-	if(str[i] == '-' && (str[i+1] >= '0' && str[i+1] <= '9'))
+	/*If there are two consecutive signs, --, -+, +-, or ++, then program ends
+	 * and returns 0*/
+	if ((str[i] == '-' || str[i] == '+') && (str[i+1] == '-' || str[i+1] == '+'))
+		return (0);
+	/*If [i] is '-' and [i+1] is a digit then changes the sign to negative*/
+	if (str[i] == '-' && (str[i+1] >= '0' && str[i+1] <= '9'))
 	{
 		sign = -1;
 		i++;
 	}
-
-	while(str[i] >= '0' && str[i] <= '9')
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		nb = 10 * nb +(str[i] - '0');
+		nb = 10 * nb + (str[i] - '0');
 		i++;
 	}
-	return(nb*sign);
+	return (nb * sign);
 }
+
+int main(int argc, char **argv)
+{
+	if(argc == 2)
+		print_hex(ft_atoi(argv[1]));
+	write(1, "\n", 1);
+	return(0);
+}
+
 /*
+// to test ft_atoi
 int main(void)
 {
 	char string[] = "1234";
 	int number = 0;
-
 	number = ft_atoi(string);
 	printf("%d\n", number*2);
 	printf("    atoi|%d|\n", atoi("13"));
@@ -94,10 +96,3 @@ int main(void)
 	return(0);
 }
 */
-int		main(int argc, char *argv[])
-{
-	if (argc == 3)
-		print_hex(ft_atoi(argv[1]), ft_atoi(argv[2]));
-	write(1, "\n", 1);
-	return (0);
-}
