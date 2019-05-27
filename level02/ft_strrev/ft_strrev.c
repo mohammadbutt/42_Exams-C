@@ -6,7 +6,7 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 09:22:54 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/27 11:13:08 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/05/27 11:27:10 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ char *ft_strrev(char *str)
 {
 	int i;
 	int b;
-	char temp[ft_strlen(str)];
-
+	char temp[ft_strlen(str)];/*Allocates memory to temp at stack so temp can
+								store the string during ft_strcpy*/
 	i = 0;
 	b = 0;
 	ft_strcpy(temp, str);
