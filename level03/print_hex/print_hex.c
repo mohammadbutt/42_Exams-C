@@ -6,14 +6,14 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/26 15:08:39 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/26 15:40:59 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/05/26 18:21:42 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h> /*write*/
 #include <stdlib.h> /*for atoi to test if ft_atoi works like atoi*/
 #include <stdio.h>  /*for printf*/
-
+/*Did not pass mouli examshell*/
 void print_hex(unsigned int num)
 {
 	char *str;

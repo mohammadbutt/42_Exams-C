@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h> /*For malloc*/
-/*Not graded by mounlinet*/
+/*Not graded by mounli in examshell*/
 int *ft_rrange(int start, int end);
 int ft_count(int start, int end);
 int *ft_rrange(int start, int end)
