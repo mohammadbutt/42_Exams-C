@@ -6,7 +6,7 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 19:39:52 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/23 20:03:06 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/05/27 15:22:05 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,31 +16,38 @@
 
 unsigned char	swap_bits(unsigned char octet)
 {
-	return((octet >> 4) | (octet << 4));
+//	return((octet >> 4) | (octet << 4));
+	return((octet / 16 ) + (octet * 16));
 }
 
-/*
-int main (void)
+void print_bits(int nb)
 {
-	printf("Adds 16 to the ascii character");
-	printf("%c\n", swap_bits('!'));
-	printf("%c\n", swap_bits('A'));
-	printf("%c\n", swap_bits('B'));
-	printf("%c\n", swap_bits('C'));
-	printf("%c\n", swap_bits('D'));
-	printf("%c\n", swap_bits('E'));
-	printf("%c\n", swap_bits('F'));
-	printf("%c\n", swap_bits('G'));
+	if(nb >= 2)
+		print_bits(nb/2);
+	nb = nb % 2 + '0';
+	write(1, &nb, 1);
+}
 
-	printf("\n---reversing---\n");
-	printf("Subtracts 16 from the ascii value\n");
-	printf("%c\n", swap_bits('q'));
-	printf("%c\n", swap_bits('r'));
-	printf("%c\n", swap_bits('s'));
-	printf("%c\n", swap_bits('t'));
-	printf("%c\n", swap_bits('u'));
-	printf("%c\n", swap_bits('v'));
-	printf("%c\n", swap_bits('w'));
+int main(void)
+{
+	int i;
+
+	i = 0;
+	printf("Adds 16 to each number upto 255, takes the remiander to start at 0 gain\n");
+	while(i <= 40)
+	{
+		printf("swap_bits:|%d|%d|\n",i ,swap_bits(i));
+		i++;
+	}
+
+	write(1,"\n", 1);
+//	print_bits(1);
+	write(1,"\n", 1);
+	print_bits(1);
+	write(1, "\n", 1);
+	print_bits(swap_bits(1));
+	printf("\n%d\n", swap_bits(254));
+
 	return(0);
 }
-*/
+
