@@ -5,27 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 09:22:54 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/27 11:27:10 by mbutt            ###   ########.fr       */
+/*   Created: 2019/05/30 15:37:39 by mbutt             #+#    #+#             */
+/*   Updated: 2019/05/30 16:11:51 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>/*for printf*/
+#include <unistd.h>
+#include <stdio.h>
 
-char *ft_strcpy(char *dest, char *source)
+void ft_swap(char *a, char *b)
 {
-	int i;
-
-	i = 0;
-	if(!source)
-		return (NULL);
-	while (source[i])
-	{
-		dest[i] = source[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	char temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 int ft_strlen(char *str)
@@ -33,7 +26,7 @@ int ft_strlen(char *str)
 	int i;
 
 	i = 0;
-	while (str[i])
+	while(str[i])
 		i++;
 	return(i);
 }
@@ -41,57 +34,27 @@ int ft_strlen(char *str)
 char *ft_strrev(char *str)
 {
 	int i;
-	int b;
-	char temp[ft_strlen(str)];/*Allocates memory to temp at stack so temp can
-								store the string during ft_strcpy*/
+	int len;
+
 	i = 0;
-	b = 0;
-	ft_strcpy(temp, str);
-	while(temp[b])
-		b++;
-	b--;
-	while(str[i])
+	len = ft_strlen(str) -1;
+
+	while(i < len)
 	{
-		str[i] = temp[b];
+		ft_swap(&str[i], &str[len]);
 		i++;
-		b--;
+		len--;
 	}
 	return(str);
 }
-
 /*
-int main (void)
+int main(void)
 {
-	char str[] = "Testing this long string to break it. Does it break or work??";
-	printf("%s",ft_strrev(str));
+	char string[] = "Testing this very long string to break it. Does it work?";
+
+	ft_strrev(string);
+
+	printf("%s\n", string);
 	return(0);
-}
-*/
-/*
-** Without ft_strcpy and ft_strlen, which implements swapping characters and
-** counting length of string just like ft_swap and ft_strlen, but everything is
-** intended to be built into one small function.
-*/
-/*
-char *ft_strrev(char *str)
-{
-	int i;
-	int b;
-	char temp;
-
-	i = 0;
-	b = 0;
-	while (str[b])
-		b++;
-	b--;
-	while(i < b)
-	{
-		temp = str[i];
-		str[i] = str[b];
-		str[b] = temp;
-		i++;
-		b--;
-	}
-	return(str);
 }
 */
