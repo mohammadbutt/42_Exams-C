@@ -3,7 +3,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 
 Level-0
 <details>
-    <summary>Show Level 0 Problem List</summary>
+    <summary>Show Level 0 Questions</summary>
 
 | Problems/Subjects                                             | Code                                                  |
 | --------------------------------------------------------      | :---------------------------------------------------: |
