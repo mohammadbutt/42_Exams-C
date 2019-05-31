@@ -7,7 +7,7 @@ Level-0
 
 |Problem/Subjects                     | Code                                 |
 |-------------------------------------| :----------------------------------: |
-|[aff_a](level00/aff_a/subject.en.txt)|[:green_book](level00/aff_a/aff_a.c)  |
+|[aff_a](level00/aff_a/subject.en.txt)|[:green_book:](level00/aff_a/aff_a.c)  |
 
 
 </details>
