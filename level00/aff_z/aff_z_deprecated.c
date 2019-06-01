@@ -5,16 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/31 20:08:33 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/31 20:13:46 by mbutt            ###   ########.fr       */
+/*   Created: 2019/05/25 10:08:24 by mbutt             #+#    #+#             */
+/*   Updated: 2019/05/25 10:16:23 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passed examshell*/
 
 #include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main (void)
+int main (int argc, char **argv)
 {
-	write(1, "z\n", 2);
+	if (argc > 0 || argv[1])
+		write(1, "z\n", 2);
 	return(0);
 }
