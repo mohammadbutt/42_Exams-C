@@ -5,112 +5,67 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/25 11:31:57 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/29 19:25:22 by mbutt            ###   ########.fr       */
+/*   Created: 2019/05/31 17:00:12 by mbutt             #+#    #+#             */
+/*   Updated: 2019/05/31 17:25:06 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-/*
-** This is not the best solution because static memory allocation is performed
-** when 1024 is allocated to placeholder.
-** Best solution would be able to allocate memory dynamically.
-** But this will work with strings of upto 1024 characters.
-*/
-
-int		main(int argc, char **argv);
-char	*ft_modstrcpy(char *dest, char *source);
-int 	main (int argc, char **argv)
+/*Passes examshell*/
+int checkdouble(char *str, char c, int len)
 {
-	int i; /* i keeps incrementing*/
-	int a; /* a start at 0 each time upto i*/
-	char placeholder[1024];
-
-	i = 0;
-	a = 0;
-	if (argc != 3)
-	{
-		write(1, "\n", 1);
-		return (0);
-	}
-	ft_modstrcpy(placeholder, argv[1]);
-	ft_modstrcpy(placeholder, argv[2]);
-	write(1, &placeholder[i], 1); /*first character has to be printed before
-									entering the while loop*/
-	i++;/*printing the first character and incrementing i by 1 makes it greater
-		than a and makes is possible for the below while loop to run*/
-	while (placeholder[i] && a < i)
-	{
-		if (placeholder[a] != placeholder[i] && a == (i-1))
-		{
-			write(1, &placeholder[i], 1);
-			a = 0;
-			i++;
-		}
-		if (placeholder[a] != placeholder[i])
-			a++;
-		if (placeholder[a] == placeholder[i])
-		{
-			a = 0;
-			i++;
-		}
-	}
-	write(1, "\n", 1);
-	return (0);
-}
-/*
-** function ft_modstrcpy performs similar function to ft_strcpy, but with slight
-** modification.
-** It goes through the first string and performs string copy, storing the values
-** from source1 to dest, then the function appends the second string to the end
-** of the dest, which is why on lines 83 and 84  we keep incrementing a while
-** it is not equal to '\0'.
-** Calling the function first time writes string from argv[1] to placeholder.
-** Calling the function second time it will keep incremamting placeholder until
-** '\0' is found and then it will start appending argv[2] to the end of
-** placeholder.
-*/
-char *ft_modstrcpy(char *dest, char *source)
-{
-	int a;
 	int i;
 
-	a = 0;
 	i = 0;
-	while(dest[a] != '\0')
-		a++;
-	while(source[i])
+	while(i < len)
 	{
-		dest[a] = source[i];
-		a++;
+		if(str[i] == c)
+			return(0);
 		i++;
 	}
-	dest[a] = '\0';
-	return(dest);
+	return(1);
 }
-/*
-** Below is what the above function is doing and replacing it with below code
-** will have the same effect as the above function ft_modstrcpy.
-*/
-/*
-	int i = 0;
-	int a = 0;
-	while(argv[1][a])
-	{
-		placeholder[i] = argv[1][a];
-		i++;
-		a++;
-	}
-	a = 0;
-	while(argv[2][a])
-	{
-		placeholder[i] = argv[2][a];
-		i++;
-		a++;
-	}
-	a = 0;
+
+void ft_union(char *str1, char *str2)
+{
+	int i;
+	int j;
+	char placeholder[128];
+
 	i = 0;
-*/
+	j = 0;
+	while(str1[i])
+	{
+		if(checkdouble(str1, str1[i], i) == 1)
+			placeholder[j++] = str1[i];
+		i++;
+	}
+	i = 0;
+	while(str2[i])
+	{
+		if(checkdouble(str2, str2[i], i) == 1)
+			placeholder[j++] = str2[i];
+		i++;
+	}
+	placeholder[j] = '\0';
+	i = 0;
+	j = 0;
+	while(placeholder[i])
+	{
+		if(checkdouble(placeholder, placeholder[i], i) == 1)
+			write(1, &placeholder[i], 1);
+		i++;
+	}
+	write(1, "\n", 1);
+}
+
+int main (int argc, char **argv)
+{
+	if(argc != 3)
+	{
+		write(1, "\n", 1);
+		return(0);
+	}
+	ft_union(argv[1], argv[2]);
+	return(0);
+}
