@@ -6,16 +6,17 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 17:27:45 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/31 17:45:48 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/05/31 17:47:30 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 /*Passes examshell*/
 
-/*This is a modified version of ft_putnbr, which works because we dont have to
- *handle negative numbers/arguments
- */
+/*
+** This is a modified version of ft_putnbr, which works because we dont have to
+** handle negative numbers/arguments
+*/
 void ft_putnbr(int nb)
 {
 	if(nb >= 10)
