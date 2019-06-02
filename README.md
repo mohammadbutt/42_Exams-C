@@ -36,7 +36,6 @@ Level 1
 |[rotone](level01/rotone/subject.en.txt)                        |[:book:](level01/rotone/rotone.c)                         |
 |[search_and_replace](level01/search_and_replace/subject.en.txt)|[:book:](level01/search_and_replace/search_and_replace0.c)|
 |[ulstr](level01/ulstr/subject.en.txt)                          |[:book:](level01/ulstr/ulstr.c)                           |
-
 </details>
 
 ---
@@ -58,3 +57,24 @@ Level 2
 |[swap_bits](level02/swap_bits/subject.en.txt)                  |[:book:](level02/swap_bits/swap_bits.c)                   |
 |[union](level02/union/subject.en.txt)                          |[:book:](level02/union/union.c)                           |
 </details>
+
+---
+Level 2
+<details>
+    <summary>Show Level 2 Questions</summary>
+    
+|Problems/Subjects                                              | Code                                                     |
+|---------------------------------------------------------------|:--------------------------------------------------------:|
+|[add_prime_sum](level03/add_prime_sum/subject.en.txt)          |[:book:](level03/add_prime_sum/add_prime_sum.c)           |
+|[expand_str](level03/ft_strcmp/subject.en.txt)                 |[:book:](level03/expand_str/expand_str.c)                 |
+|[ft_range](level03/ft_range/subject.en.txt)                    |[:book:](level03/ft_range/ft_range.c)                     |
+|[ft_rrange](level03/ft_rrange/subject.en.txt)                  |[:book:](level03/ft_rrange/ft_rrange.c)                   |
+|[hidenp](level03/hidenp/subject.en.txt)                        |[:book:](level03/hidenp/hidenp.c)                         |
+|[lcm](level03/lcm/subject.en.txt)                              |[:book:](level03/lcm/lcm.c)                               |
+|[paramsum](level03/paramsum/subject.en.txt)                    |[:book:](level03/paramsum/paramsum.c)                     |
+|[pgcd](level03/pgcd/subject.en.txt)                            |[:book:](level03/pgcd/pgcd.c)                             |
+|[print_hex](level03/print_hex/subject.en.txt)                  |[:book:](level03/print_hex/print_hex.c)                   |
+|[rstr_capitalizer](level03/rstr_capitalizer/subject.en.txt)    |[:book:](level03/rstr_capitalizer/rstr_capitalizer.c)     |
+|[str_capitalizer](level03/str_capitalizer/subject.en.txt)      |[:book:](level03/str_capitalizer/str_capitalizer.c)       |
+</details>
+
