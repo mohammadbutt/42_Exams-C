@@ -1,7 +1,6 @@
 # 42_Exams-C
 Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 
-Level 0
 <details>
     <summary>Show Level 0 Questions</summary>
 
@@ -21,7 +20,6 @@ Level 0
 </details>
 
 ---
-Level 1
 <details>
     <summary>Show Level 1 Questions</summary>
 
@@ -39,7 +37,6 @@ Level 1
 </details>
 
 ---
-Level 2
 <details>
     <summary>Show Level 2 Questions</summary>
     
@@ -59,7 +56,6 @@ Level 2
 </details>
 
 ---
-Level 3
 <details>
     <summary>Show Level 3 Questions</summary>
     
@@ -79,7 +75,6 @@ Level 3
 </details>
 
 ---
-Level 4
 <details>
     <summary>Show Level 4 Questions</summary>
     
