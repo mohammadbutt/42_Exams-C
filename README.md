@@ -32,7 +32,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[rev_print](level01/rev_print/subject.en.txt)                  |[:book:](level01/rev_print/rev_print.c)                   |
 |[rot_13](level01/rot_13/subject.en.txt)                        |[:book:](level01/rot_13/rot_13.c)                         |
 |[rotone](level01/rotone/subject.en.txt)                        |[:book:](level01/rotone/rotone.c)                         |
-|[search_and_replace](level01/search_and_replace/subject.en.txt)|[:book:](level01/search_and_replace/search_and_replace0.c)|
+|[search_and_replace](level01/search_and_replace/subject.en.txt)|[:book:](level01/search_and_replace/search_and_replace.c)|
 |[ulstr](level01/ulstr/subject.en.txt)                          |[:book:](level01/ulstr/ulstr.c)                           |
 </details>
 
