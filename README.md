@@ -66,7 +66,7 @@ Level 3
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[add_prime_sum](level03/add_prime_sum/subject.en.txt)          |[:book:](level03/add_prime_sum/add_prime_sum.c)           |
-|[expand_str](level03/ft_strcmp/subject.en.txt)                 |[:book:](level03/expand_str/expand_str.c)                 |
+|[expand_str](level03/expand_str/subject.en.txt)                |[:book:](level03/expand_str/expand_str.c)                 |
 |[ft_range](level03/ft_range/subject.en.txt)                    |[:book:](level03/ft_range/ft_range.c)                     |
 |[ft_rrange](level03/ft_rrange/subject.en.txt)                  |[:book:](level03/ft_rrange/ft_rrange.c)                   |
 |[hidenp](level03/hidenp/subject.en.txt)                        |[:book:](level03/hidenp/hidenp.c)                         |
