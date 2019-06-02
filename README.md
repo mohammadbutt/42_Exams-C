@@ -43,6 +43,7 @@ Level 1
 Level 2
 <details>
     <summary>Show Level 2 Questions</summary>
+    
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[alpha_mirror](level02/alpha_mirror/subject.en.txt)            |[:book:](level02/alpha_mirror/alpha_mirror.c)             |
