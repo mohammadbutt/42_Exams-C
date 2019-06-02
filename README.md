@@ -78,3 +78,15 @@ Level 3
 |[str_capitalizer](level03/str_capitalizer/subject.en.txt)      |[:book:](level03/str_capitalizer/str_capitalizer.c)       |
 </details>
 
+---
+Level 4
+<details>
+    <summary>Show Level 4 Questions</summary>
+    
+|Problems/Subjects                                              | Code                                                     |
+|---------------------------------------------------------------|:--------------------------------------------------------:|
+|[fprime](level04/fprime/subject.en.txt)                        |[:book:](level04/fprime/fprime.c)                         |
+|[rev_wstr](level04/rev_wstr/subject.en.txt)                    |[:book:](level04/rev_wstr/rev_wstr.c)                     |
+|[sort_int_tab](level04/sort_int_tab/subject.en.txt)            |[:book:](level04/sort_int_tab/sort_int_tab.c)             |
+</details>
+
