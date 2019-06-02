@@ -6,20 +6,20 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 19:39:52 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/27 15:22:05 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/05/31 20:38:22 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Both methods pass examshell*/
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include <unistd.h>/*write(2)*/
+#include <stdio.h> /*printf(3)*/
 
 unsigned char	swap_bits(unsigned char octet)
 {
 //	return((octet >> 4) | (octet << 4));
 	return((octet / 16 ) + (octet * 16));
 }
-
+/*
 void print_bits(int nb)
 {
 	if(nb >= 2)
@@ -50,4 +50,4 @@ int main(void)
 
 	return(0);
 }
-
+*/
