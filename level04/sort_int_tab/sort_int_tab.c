@@ -6,13 +6,12 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:29:32 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/30 14:58:05 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/06/02 19:54:48 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Passed examshell*/
 
 #include <stdio.h>
-
-/*passed mouli test*/
 
 void ft_swap(int *a, int *b)
 {
