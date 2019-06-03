@@ -73,7 +73,6 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[rstr_capitalizer](level03/rstr_capitalizer/subject.en.txt)    |[:book:](level03/rstr_capitalizer/rstr_capitalizer.c)     |
 |[str_capitalizer](level03/str_capitalizer/subject.en.txt)      |[:book:](level03/str_capitalizer/str_capitalizer.c)       |
 |[tab_mult](level03/tab_mult/subject.en.txt)                    |[:book:](level03/tab_mult/tab_mult.c)                     |
-
 </details>
 
 ---
@@ -88,3 +87,12 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[sort_int_tab](level04/sort_int_tab/subject.en.txt)            |[:book:](level04/sort_int_tab/sort_int_tab.c)             |
 </details>
 
+---
+---
+<details>
+    <summary>Show Level 4 Questions</summary>
+    
+|Problems/Subjects                                              | Code                                                     |
+|---------------------------------------------------------------|:--------------------------------------------------------:|
+|[brackets](level05/brackets/subject.en.txt)                    |[:book:](level05/brackets/brackets.c)                     |
+</details>
