@@ -5,33 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/02 18:20:40 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/02 18:28:19 by mbutt            ###   ########.fr       */
+/*   Created: 2019/05/26 20:28:24 by mbutt             #+#    #+#             */
+/*   Updated: 2019/05/26 20:36:00 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passes examshell*/
 
-#include <unistd.h>
+#include <unistd.h> /*for write(2)*/
 
-void rev_print(char *str)
+int main(int argc, char **argv)
 {
 	int i;
-
+	
 	i = 0;
-	while(str[i])
-		i++;
-	i--;
-	while(str[i])
-		write(1, &str[i--], 1);
-	write(1, "\n", 1);
-}
-
-int main (int argc, char **argv)
-{
-	if(argc != 2)
+	if (argc != 2)
 	{
 		write(1, "\n", 1);
 		return(0);
 	}
-	rev_print(argv[1]);
+	while(argv[1][i])
+		i++;
+	i--;
+	while(argv[1][i])
+	{
+		write(1, &argv[1][i], 1);
+		i--;
+	}
+	write(1, "\n", 1);
+	return(0);
 }
