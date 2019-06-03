@@ -6,9 +6,10 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 13:20:13 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/30 14:25:02 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/06/02 19:19:04 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Passes examshell*/
 
 #include <unistd.h>
 #include <stdio.h>
@@ -19,8 +20,6 @@
 ** printf, atoi, malloc, and free. But I wanted to create atoi and putnbr to get
 ** some practice on them.
 */
-
-/*passed mouli test*/
 
 int ft_atoi(char *str)
 {
@@ -104,59 +103,3 @@ int main (int argc, char **argv)
 	write(1, "\n", 1);
 	return(0);
 }
-/*
-// Tests for atoi and putnbr
-int main(void)
-{
-	char *str1 = "111";
-	char *str2 = "111";
-
-	char *str3 = " 222";
-	char *str4 = "  222";
-
-	char *str5 = "  +33333";
-	char *str6 = "  +33333";
-
-	char *str7 = "  -4444444";
-	char *str8 = "  -4444444";
-
-	char *str9 = "  --5555555";
-	char *str10 = "  --5555555";
-
-	char *str11 = "  ++6666666";
-	char *str12 = "  ++6666666";
-
-	char *str13 = "-2147483648";
-	char *str14 = "-2147483648";
-
-	ft_putnbr(ft_atoi(str1));
-	printf("\n%d\n", ft_atoi(str1));
-	printf("%d\n\n", atoi(str2));
-
-	ft_putnbr(ft_atoi(str3));
-	printf("\n%d\n", ft_atoi(str3));
-	printf("%d\n\n", atoi(str4));
-
-	ft_putnbr(ft_atoi(str5));
-	printf("\n%d\n", ft_atoi(str5));
-	printf("%d\n\n", atoi(str6));
-
-	ft_putnbr(ft_atoi(str7));
-	printf("\n%d\n", ft_atoi(str7));
-	printf("%d\n\n", atoi(str8));
-
-	ft_putnbr(ft_atoi(str9));
-	printf("\n%d\n", ft_atoi(str9));
-	printf("%d\n\n", atoi(str10));
-
-	ft_putnbr(ft_atoi(str11));
-	printf("\n%d\n", ft_atoi(str11));
-	printf("%d\n\n", atoi(str12));
-
-	ft_putnbr(ft_atoi(str13));
-	printf("\n%d\n", ft_atoi(str13));
-	printf("%d\n\n", atoi(str14));
-
-	return(0);
-}
-*/
