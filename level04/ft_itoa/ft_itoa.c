@@ -6,9 +6,10 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 15:23:11 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/03 15:35:12 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/06/03 15:38:40 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Did not tun it in examshell. But passed personal tests*/
 
 #include <stdio.h>  /*printf(3)*/
 #include <stdlib.h> /*free(3)*/
