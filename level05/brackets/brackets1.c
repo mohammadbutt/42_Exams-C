@@ -5,17 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/03 20:49:46 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/03 21:06:45 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/02 19:57:31 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/03 12:37:54 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passed examshell*/
 
 #include <unistd.h>
-
-int matchbracket(char a, char b)
+/* Not graded by examshell. Passed personal tests*/
+int match_bracket(char a, char b)
 {
-	if((a == '{' && b == '}') || (a == '[' && b == ']') || (a == '(' && b == ')'))
+	if((a == '(' && b == ')') || (a == '[' && b == ']') || (a == '{' && b == '}'))
 		return(1);
 	return(0);
 }
@@ -37,7 +36,7 @@ int brackets(char *str)
 		}
 		if(str[i] == '}' || str[i] == ']' || str[i] == ')')
 		{
-			if(matchbracket(stack[j-1], str[i]))
+			if(match_bracket(stack[j-1], str[i]))
 				j--;
 			else
 				return(0);
@@ -49,7 +48,7 @@ int brackets(char *str)
 	return(0);
 }
 
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int i;
 
@@ -59,14 +58,13 @@ int main (int argc, char **argv)
 		write(1, "\n", 1);
 		return(0);
 	}
-	argc--;
-	while(argc)
+	while(i < argc)
 	{
-		if(brackets(argv[i]))
+		if (brackets(argv[i]) == 1)
 			write(1, "OK\n", 3);
-		else
+		else if(brackets(argv[i]) == 0)
 			write(1, "Error\n", 6);
 		i++;
-		argc--;
 	}
+	return(0);
 }
