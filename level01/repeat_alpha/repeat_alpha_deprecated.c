@@ -5,46 +5,43 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/30 20:34:12 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/30 20:46:02 by mbutt            ###   ########.fr       */
+/*   Created: 2019/05/26 12:03:10 by mbutt             #+#    #+#             */
+/*   Updated: 2019/05/26 12:35:54 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passes examshell*/
 
 #include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-void repeat_alpha(char *str)
+/*Not graded by moulinet*/
+int main (int argc, char **argv)
 {
 	int i;
 	int repeat;
 
-	i = 0;
 	repeat = 0;
-	while(str[i])
+	i = 0;
+	if (argc != 2)
 	{
-		if(str[i] >= 'a' && str[i] <= 'z')
-			repeat = str[i] - 96;
-		else if(str[i] >= 'A' && str[i] <= 'Z' )
-			repeat = str[i] - 64;
+		write(1, "\n", 1);
+		return (0);
+	}
+	while (argv[1][i])
+	{
+		if (argv[1][i] >= 'a' && argv[1][i] <= 'z')
+			repeat = argv[1][i] - 96;
+		else if (argv[1][i] >= 'A' && argv[1][i] <= 'Z')
+			repeat = argv[1][i] - 64;
 		else
 			repeat = 1;
-		while(repeat)
+		while (repeat)
 		{
-			write(1, &str[i], 1);
+			write(1, &argv[1][i], 1);
 			repeat--;
 		}
 		i++;
 	}
 	write(1, "\n", 1);
-}
-
-int main (int argc, char **argv)
-{
-	if(argc != 2)
-	{
-		write(1, "\n", 1);
-		return(0);
-	}
-	repeat_alpha(argv[1]);
 	return(0);
 }
