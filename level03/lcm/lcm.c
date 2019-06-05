@@ -9,6 +9,7 @@
 /*   Updated: 2019/04/30 19:14:22 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Passes examshell*/
 
 #include <stdio.h>
 
@@ -32,7 +33,7 @@ unsigned int lcm(unsigned int a, unsigned int b)
 	}
 	return (lcm);
 }
-
+/*
 int main (void)
 {
 	unsigned int num1;
@@ -44,4 +45,4 @@ int main (void)
 	printf("%d", lcm(num1, num2));
 
 }
-
+*/
