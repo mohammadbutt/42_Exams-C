@@ -1,0 +1,116 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r7p28.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Wed Jun  5 14:19:39 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190605/mbutt
+
+= Git history ==================================================================
+$> git -C /var/folders/ww/v6yg8xs15nb5gc8dzryhb14m0000gp/T/tmpj1KevA/user log --pretty='%H - %an, %ad : %s'
+d506d6e579b95ea198c7569739566221d7713027 - Mohammad Butt, Wed Jun 5 14:18:51 2019 -0700 : ft_split
+4424992d04f849f899269c5d3c68e40ec072aea4 - Mohammad Butt, Wed Jun 5 12:55:36 2019 -0700 : Did tab_mult
+7c86790ab5472bcd40b9b02b28ff98c3d665ba5f - Mohammad Butt, Wed Jun 5 11:08:07 2019 -0700 : Did do_op
+6ce6291ea6f9d9e55176a01960bc95a559198eac - Mohammad Butt, Wed Jun 5 10:53:27 2019 -0700 : Did ft_putstr
+1b620cee3f0f803e471fdb023115b220c069f6d1 - Mohammad Butt, Wed Jun 5 10:48:54 2019 -0700 : Did aff_first_param
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/ww/v6yg8xs15nb5gc8dzryhb14m0000gp/T/tmpj1KevA/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1298 Jun  5 14:19 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 14:19 aff_first_param
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 14:19 do_op
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 14:19 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 14:19 ft_split
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 14:19 tab_mult
+
+/var/folders/ww/v6yg8xs15nb5gc8dzryhb14m0000gp/T/tmpj1KevA/user/aff_first_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1148 Jun  5 14:19 aff_first_param.c
+
+/var/folders/ww/v6yg8xs15nb5gc8dzryhb14m0000gp/T/tmpj1KevA/user/do_op:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1478 Jun  5 14:19 do_op.c
+
+/var/folders/ww/v6yg8xs15nb5gc8dzryhb14m0000gp/T/tmpj1KevA/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1092 Jun  5 14:19 ft_putstr.c
+
+/var/folders/ww/v6yg8xs15nb5gc8dzryhb14m0000gp/T/tmpj1KevA/user/ft_split:
+total 8
+-rw-r--r--  1 deepthought  deepthought  3606 Jun  5 14:19 ft_split.c
+
+/var/folders/ww/v6yg8xs15nb5gc8dzryhb14m0000gp/T/tmpj1KevA/user/tab_mult:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2031 Jun  5 14:19 tab_mult.c
+ 
+= ft_split =====================================================================
+$> gcc -Wextra -Wall -Werror ft_split.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./9u058l4je5d84tgzael58vtq ""
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./67xel9jhzg8kvsxn3vyyhk12 "
+
+
+
+  	"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./tgg6v0agu25fhp6tjkdvib05 "	
+
+
+ "
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./r5h7koaeghwvc6enkv16hrfb "2TK3knoEyWj4BOqJ"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./s19itghzxo3z768zzde1a8v1 "SlPJkLKUDa3jheHuT"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./u94qs6j8cwuxwgdx45m1dy66 "  
+8bPz	  sobauVg6MBK
+  
+ejy594UJns6uo4HG8uZ5Ex76lzLD2g
+	DBm
+  n9beiUqChNra3
+   hwNrJPuoZe "
+$> diff -U 3 user_output_test6 test6.output | cat -e
+--- user_output_test6	2019-06-05 14:19:43.000000000 -0700$
++++ test6.output	2019-06-05 14:19:43.000000000 -0700$
+@@ -1,4 +1,3 @@$
+-$
+ 8bPz$
+ sobauVg6MBK$
+ ejy594UJns6uo4HG8uZ5Ex76lzLD2g$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
