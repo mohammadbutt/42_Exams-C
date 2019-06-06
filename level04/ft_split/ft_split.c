@@ -6,14 +6,14 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 13:05:12 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/05 20:09:15 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/06/06 11:05:40 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Failed examshell*/
 
 #include <stdlib.h> /*malloc(3)*/
-#include <stdio.h> 	/*printf(3)*/
-#include <unistd.h>
+#include <stdio.h> 	/*printf(3), fopen(3), getline(3)*/
+#include <string.h> /*strcat(3)*/
 
 /*
 ** ft_stn(), function that returns 1 if it detects, whitespaces.
@@ -22,7 +22,8 @@
 */
 int ft_stn(char c)
 {
-	if(c == ' ' || c == '\t' || c == '\n')
+//	if(c == '\t' || c == '\n' || c == '\v' || c == '\f' || c == '\r' || c  == ' ')	
+	if(c  == '\t' || c == '\n' || c == ' ')		
 		return(1);
 	return(0);
 }
@@ -97,6 +98,8 @@ char **ft_split(char *str)
 		return(NULL);
 	while(word_count)
 	{
+		while(ft_stn(str[i]))
+			i++;
 		while(str[i] && ft_stn(str[i]) == 0)
 //		while(str[i] && (str[i] != ' ' && str[i] != '\t' && str[i] != '\n'))
 		{
@@ -106,13 +109,42 @@ char **ft_split(char *str)
 		word[j] = ft_strsub(str, i - len, len);
 		len = 0;
 		j++;		
-		while(ft_stn(str[i])) /*i++ as long as str[i] is ' ', '\t', or '\n'*/
-			i++;
+//		while(ft_stn(str[i])) /*i++ as long as str[i] is ' ', '\t', or '\n'*/
+//			i++;
 		word_count--;
 	}
 	word[j] = NULL;
 	return(word);
 }
+/*
+int main(void)
+{
+	int i;
+	int return_value;
+	FILE *file_stream;
+	char *line;
+	size_t buff_size;
+	char full_string[1024];
+	char **words;
+
+	file_stream = fopen("big_test.trace", "r");
+	line = NULL;
+	buff_size = 0;
+	while((return_value = getline(&line, &buff_size, file_stream)))
+	{
+		if(return_value > 0)
+			strcat(full_string, line);
+//			printf("%s", line);
+		else
+			break;
+	}
+//	printf("%s", full_string);
+	words = ft_split(full_string);
+	while(words[i])
+		printf("|%s|\n", words[i++]);
+	return(0);
+}
+*/
 /*
 int main(int argc, char **argv)
 {
@@ -137,6 +169,7 @@ int main(int argc, char **argv)
 int main (void)
 {
 	int i;
+	char **word;
 	char *str = "This test is to \nsee   \n\nDoes \t\t  it work???   Or  NOT ";   
 	i = 0;
 	word = ft_split(str);
