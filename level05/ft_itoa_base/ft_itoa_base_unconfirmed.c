@@ -5,77 +5,76 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/06 14:55:30 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/06 15:59:49 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/03 17:21:24 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/03 19:49:48 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passed examshell*/
-
+/*Did not push to examshell. But passes personal tests*/
 #include <stdio.h>  /*printf(3)*/
 #include <stdlib.h> /*malloc(3)*/
 
-int ft_numlen(int value, int base)
+int ft_numlen(int num, int base) //
 {
-	int len;
+	int i;
 
-	len = 0;
+	i = 0;
 	if(base < 2 || base > 16)
 		return(0);
-	if(base == 10 && value <= 0)
-		len++;
-	while(value)
+	if(num <= 0 && base == 10)
+		i++;
+	while(num)
 	{
-		value = value/base;
-		len++;
+		num = num / base;      //
+		i++;
 	}
-	return(len);
+	return(i);
 }
-int ft_abs(int num)
+
+int ft_abs(int n)
 {
-	if(num < 0)
-		return(-1 * num);
-	return(num);
+	if(n < 0)
+		return(-1 * n);
+	return(n);
+
 }
-char	*ft_itoa_base(int value, int base)
+char *ft_itoa_base(int value, int base) //
 {
-	int numlen;
-	char *placeholder = "0123456789ABCDEF";
+	int len;
 	char *str;
-	numlen = ft_numlen(value, base);
-	if(base < 2 || base > 16)
-		return(NULL);
+	char *placeholder = "0123456789ABCDEF";
+	len = ft_numlen(value, base);  //
+	if(base < 2 || base > 16) 	//
+		return(NULL);			//
 	if(value == 0)
 		return("0");
-	str = (char *)malloc(sizeof(char) * (numlen + 1));
+	str = (char *)malloc(sizeof(char) * (len +1));
 	if(str == NULL)
 		return(NULL);
-	if(value < 0 && base == 10)
+	if(value < 0 && base == 10) //
 		str[0] = '-';
-	str[numlen] = '\0';
-	numlen--;
+	str[len] = '\0';
+	len--;
 	while(value)
 	{
-		str[numlen] = placeholder[ft_abs(value%base)];
-		value = value/base;
-		numlen--;
+		str[len] = placeholder[ft_abs(value%base)];// + '0';
+		value = value/base;  //
+		len--;
 	}
+	
 	return(str);
 }
-/*
+
 int main(int argc, char **argv)
 {
 	int value;
 	int base;
 	char *str;
-
 	if(argc != 3)
-	{
-		printf("\n");
 		return(0);
-	}
+
 	value = atoi(argv[1]);
 	base = atoi(argv[2]);
 	str = ft_itoa_base(value, base);
-	printf("|%s|\n", str);
+	printf("%s\n", str);
+	return(0);
 }
-*/
