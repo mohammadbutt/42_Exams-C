@@ -12,6 +12,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[aff_z](level00/aff_z/subject.en.txt)                          |[:book:](level00/aff_z/aff_z.c)                           |
 |[ft_countdown](level00/ft_countdown/subject.en.txt)            |[:book:](level00/ft_countdown/ft_countdown.c)             |
 |[ft_print_numbers](level00/ft_print_numbers/subject.en.txt)    |[:book:](level00/ft_print_numbers/ft_print_numbers.c)     |
+|[hello](level00/hello/subject.en.txt)                          |[:book:](level00/hello/hello.c)                           |
 |[maff_alpha](level00/maff_alpha/subject.en.txt)                |[:book:](level00/maff_alpha/maff_alpha1.c)                |
 |[maff_revalpha](level00/maff_revalpha/subject.en.txt)          |[:book:](level00/maff_revalpha/maff_revalpha.c)           |
 |[only_a](level00/only_a/subject.en.txt)                        |[:book:](level00/only_a/only_a.c)                         |
