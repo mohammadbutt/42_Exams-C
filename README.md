@@ -43,7 +43,8 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[alpha_mirror](level02/alpha_mirror/subject.en.txt)            |[:book:](level02/alpha_mirror/alpha_mirror.c)             |
-|[do_op](level02/do_op/subject.en.txt)                          |[:book:](level02/do_op/do_op.c)                          |
+|[is_power_of_2](level02/is_power_of_2/subject.en.txt)          |[:question:](level02/is_power_of_2/is_power_of_2.c)       |
+|[do_op](level02/do_op/subject.en.txt)                          |[:book:](level02/do_op/do_op.c)                           |
 |[ft_strcmp](level02/ft_strcmp/subject.en.txt)                  |[:book:](level02/ft_strcmp/ft_strcmp.c)                   |
 |[ft_strdup](level02/ft_strdup/subject.en.txt)                  |[:book:](level02/ft_strdup/ft_strdup.c)                   |
 |[ft_strrev](level02/ft_strrev/subject.en.txt)                  |[:book:](level02/ft_strrev/ft_strrev.c)                   |
