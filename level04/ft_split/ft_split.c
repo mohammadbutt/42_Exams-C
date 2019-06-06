@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 /*Passes examshell*/
-
 /*ft_split without notes: https://github.com/mohammadbutt/42_Exams-C/blob/master/level04/ft_split/ft_split_no_notes.c*/
 
 /*
