@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 /*Passes examshell*/
+/*ft_split with notes: https://github.com/mohammadbutt/42_Exams-C/blob/master/level04/ft_split/ft_split.c*/
 
 #include <stdlib.h> /*malloc(3)*/
 #include <stdio.h>  /*printf(3)*/
