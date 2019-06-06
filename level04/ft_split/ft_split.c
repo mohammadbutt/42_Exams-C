@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 /*Passes examshell*/
+
+/*ft_split without notes: https://github.com/mohammadbutt/42_Exams-C/blob/master/level04/ft_split/ft_split_no_notes.c*/
+
 /*
 ** There are 3 main at the bottom, if you would like to test your ft_split.
 ** I recommend testing second main, which will split the command line argument
