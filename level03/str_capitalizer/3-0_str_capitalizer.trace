@@ -1,0 +1,85 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r8p40.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Wed Jun  5 18:58:34 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190606/mbutt
+
+= Git history ==================================================================
+$> git -C /var/folders/7_/9z08vd0j3fb6s4dlmxvmrzy40000gp/T/tmp0QsOVd/user log --pretty='%H - %an, %ad : %s'
+111ef8796bf3538c3e4bca7d6340c0ef2d7372fb - Mohammad Butt, Wed Jun 5 18:58:22 2019 -0700 : doing this
+49c435f3c8161ae1d9773b8c7567ea6b506f6f23 - Mohammad Butt, Wed Jun 5 18:51:22 2019 -0700 : Pushing wdmatch
+e4c0e2a4ed22f5ac6073e6b70d2ecaa108517b6a - Mohammad Butt, Wed Jun 5 18:21:33 2019 -0700 : Second problem
+97527a4c7d26469622a4c44471056cb3288cbd77 - Mohammad Butt, Wed Jun 5 18:19:05 2019 -0700 : First problem
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/7_/9z08vd0j3fb6s4dlmxvmrzy40000gp/T/tmp0QsOVd/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1114 Jun  5 18:58 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 18:58 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 18:58 repeat_alpha
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 18:58 str_capitalizer
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 18:58 wdmatch
+
+/var/folders/7_/9z08vd0j3fb6s4dlmxvmrzy40000gp/T/tmp0QsOVd/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1063 Jun  5 18:58 ft_countdown.c
+
+/var/folders/7_/9z08vd0j3fb6s4dlmxvmrzy40000gp/T/tmp0QsOVd/user/repeat_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1381 Jun  5 18:58 repeat_alpha.c
+
+/var/folders/7_/9z08vd0j3fb6s4dlmxvmrzy40000gp/T/tmp0QsOVd/user/str_capitalizer:
+total 8
+-rw-r--r--  1 deepthought  deepthought  604 Jun  5 18:58 str_capitalizer.c
+
+/var/folders/7_/9z08vd0j3fb6s4dlmxvmrzy40000gp/T/tmp0QsOVd/user/wdmatch:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1517 Jun  5 18:58 wdmatch.c
+ 
+= str_capitalizer ==============================================================
+$> gcc -Wextra -Wall -Werror str_capitalizer.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./0a5ukwuahdrsu66a6om4e5a3 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./7fmyecc0h5ozdicv0akhxwzi 
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./4n8lr08ib3l2hwuqgvp8xdun "ebz"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./nts4mgm9e0ksj8wi132upk1t "-IusBhzKyxNXUvcaH=gVKvjOqSCPWUeARx5	 -foUPJ7F		Tp0joqSZxhLym="
+$> diff -U 3 user_output_test4 test4.output | cat -e
+--- user_output_test4	2019-06-05 18:58:36.000000000 -0700$
++++ test4.output	2019-06-05 18:58:36.000000000 -0700$
+@@ -1 +1 @@$
+--iusbhzkyxnxuvcah=gvkvjoqscpwuearx5	 -foupj7f		tp0joqszxhlym=$
++-iusbhzkyxnxuvcah=gvkvjoqscpwuearx5	 -foupj7f		Tp0joqszxhlym=$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
