@@ -44,12 +44,13 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[alpha_mirror](level02/alpha_mirror/subject.en.txt)            |[:book:](level02/alpha_mirror/alpha_mirror.c)             |
-|[is_power_of_2](level02/is_power_of_2/subject.en.txt)          |[:question:](level02/is_power_of_2/is_power_of_2.c)       |
 |[do_op](level02/do_op/subject.en.txt)                          |[:book:](level02/do_op/do_op.c)                           |
+|[ft_atoi](level02/ft_atoi/subject.en.txt)                      |[:question:](level02/ft_atoi/ft_atoi.c)                   |
 |[ft_strcmp](level02/ft_strcmp/subject.en.txt)                  |[:book:](level02/ft_strcmp/ft_strcmp.c)                   |
 |[ft_strdup](level02/ft_strdup/subject.en.txt)                  |[:book:](level02/ft_strdup/ft_strdup.c)                   |
 |[ft_strrev](level02/ft_strrev/subject.en.txt)                  |[:book:](level02/ft_strrev/ft_strrev.c)                   |
 |[inter](level02/inter/subject.en.txt)                          |[:book:](level02/inter/inter.c)                           |
+|[is_power_of_2](level02/is_power_of_2/subject.en.txt)          |[:question:](level02/is_power_of_2/is_power_of_2.c)       |
 |[last_word](level02/last_word/subject.en.txt)                  |[:book:](level02/last_word/last_word.c)                   |
 |[max](level02/max/subject.en.txt)                              |[:book:](level02/max/max.c)                               |
 |[print_bits](level02/print_bits/subject.en.txt)                |[:book:](level02/print_bits/print_bits.c)                 |
