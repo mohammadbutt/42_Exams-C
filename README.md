@@ -54,6 +54,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[reverse_bits](level02/reverse_bits/subject.en.txt)            |[:book:](level02/reverse_bits/reverse_bits.c)             |
 |[swap_bits](level02/swap_bits/subject.en.txt)                  |[:book:](level02/swap_bits/swap_bits.c)                   |
 |[union](level02/union/subject.en.txt)                          |[:book:](level02/union/union.c)                           |
+|[wdmatch](level02/wdmatch/subject.en.txt)                      |[:book:](level02/wdmatch/wdmatch.c)                       |
 </details>
 
 ---
