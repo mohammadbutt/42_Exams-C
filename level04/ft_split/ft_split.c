@@ -6,21 +6,23 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 13:05:12 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/05 14:35:56 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/06/05 18:14:39 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Failed examshell*/
 
 #include <stdlib.h> /*malloc(3)*/
 #include <stdio.h> 	/*printf(3)*/
+#include <unistd.h>
 
 /*
-** ft_stn(), function that returns 1 if it detects, spaces/tabs/newlines.
+** ft_stn(), function that returns 1 if it detects, whitespaces.
+** man isspace(3).
 ** Returns 0 if it doesnt detect spaces/tabs/newlines.
 */
 int ft_stn(char c)
 {
-	if(c == ' ' || c == '\t' || c == '\n' || c == '\v')
+	if(c == ' ' || c == '\t' || c == '\n')
 		return(1);
 	return(0);
 }
@@ -112,9 +114,10 @@ char **ft_split(char *str)
 	word = (char **)malloc(sizeof(char *) * (word_count + 1));
 	if(word == NULL)
 		return(NULL);
+//	while(word_count)
 	while(i < end_trim)
 	{
-		while(ft_stn(str[i]) == 0)
+		while(str[i] && ft_stn(str[i]) == 0)
 //		while(str[i] && (str[i] != ' ' && str[i] != '\t' && str[i] != '\n'))
 		{
 			i++;
@@ -125,30 +128,59 @@ char **ft_split(char *str)
 		j++;		
 		while(ft_stn(str[i])) /*i++ as long as str[i] is ' ', '\t', or '\n'*/
 			i++;
+//		word_count--;
 	}
 	word[j] = NULL;
 	return(word);
 }
+void ft_putstr(char *str)
+{
+	int i;
 
+	i = 0;
+	if(str)
+		while(str[i])
+			write(1, &str[i++], 1);
+}
+/*
+int main(int argc, char **argv)
+{
+	int i;
+	char **words;
+	if(argc != 2)
+	{
+		printf("\n");
+		return(0);
+	}
+	i = 0;
+	words = ft_split(argv[1]);
+	while(words[i])
+	{
+		printf("|%s|\n", words[i]);
+		i++;
+	}
+	return(0);
+}
+*/
 /*
 int main (void)
 {
 	int i;
-//	char *str = "This test is to \nsee   \n\nDoes   it work???   Or  NOT ";
-	char *str = "\
-8bPz	  sobauVg6MBK\
-\
-ejy594UJns6uo4HG8uZ5Ex76lzLD2g\
-	DBm\
-  n9beiUqChNra3\
-   hwNrJPuoZe ";
-//	char *str = "     ";	
+	char *str = "This test is to \nsee   \n\nDoes \t\t  it work???   Or  NOT ";
+	
+//	char *str = "\
+//8bPz	  sobauVg6MBK\
+//\
+//ejy594UJns6uo4HG8uZ5Ex76lzLD2g\
+//	DBm\
+// n9beiUqChNra3\
+//   hwNrJPuoZe ";
 	char **word;
    
 	i = 0;
 	word = ft_split(str);
 	while(word[i])
-		printf("%s\n", word[i++]);
+		printf("|%s|\n", word[i++]);
 	return(0);
 }
 */

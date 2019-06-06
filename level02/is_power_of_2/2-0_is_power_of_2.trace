@@ -1,0 +1,65 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r9p33.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Wed Jun  5 15:53:05 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190605/mbutt3
+
+= Git history ==================================================================
+$> git -C /var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpyDG9a6/user log --pretty='%H - %an, %ad : %s'
+92cf830b43c094a50f349125c9d13019f8e0db24 - Mohammad Butt, Wed Jun 5 15:51:50 2019 -0700 : Did is_power_of_2
+5c63507e9b94e9bacf2e03df0410acb9cbaf72a8 - Mohammad Butt, Wed Jun 5 15:26:11 2019 -0700 : repeat
+37111793c4f3db2c973f54d747a198cd7057a60f - Mohammad Butt, Wed Jun 5 15:24:35 2019 -0700 : repeat_alpha
+8e9d435597028a737102e7fc4102b43ea26518d2 - Mohammad Butt, Wed Jun 5 15:22:43 2019 -0700 : Did aff_last
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpyDG9a6/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1067 Jun  5 15:53 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 15:53 aff_last_param
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 15:53 is_power_of_2
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  5 15:53 repeat_alpha
+
+/var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpyDG9a6/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  308 Jun  5 15:53 aff_last_param.c
+
+/var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpyDG9a6/user/is_power_of_2:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1539 Jun  5 15:53 is_power_of_2.c
+
+/var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpyDG9a6/user/repeat_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1381 Jun  5 15:53 repeat_alpha.c
+ 
+= is_power_of_2 ================================================================
+$> gcc -Wextra -Wall -Werror is_power_of_2.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./5q6hygkbwbyudqgxfb8otj8l 0
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2019-06-05 15:53:06.000000000 -0700$
++++ test1.output	2019-06-05 15:53:06.000000000 -0700$
+@@ -1 +1 @@$
+-0 is a power of 2!$
++0 is not a power of 2!$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
