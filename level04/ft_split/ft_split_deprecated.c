@@ -6,7 +6,7 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 13:05:12 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/05 20:09:15 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/06/05 21:05:23 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Failed examshell*/
@@ -55,7 +55,7 @@ int ft_wordcount(char *str)
 ** 		1.	Current element, str[i], is not a single space character. 
 **		2.	1 element ahead of the current element, str[i+1] is either a space
 **			or a null terminated character.
-** When the above two conditions are met we do count++. Otherwise, we do i++,
+** When the above two conditions are met we do count++. Otherwise, we do count++,
 ** to move to the next character of the string.
 ** Below is what the while loop looks like with a single space as a delimiter:
 ** while(str[i])
@@ -80,22 +80,42 @@ char *ft_strsub(char *source, int start, int len)
 	return(dest);
 }
 
+int ft_endtrim(char *str)
+{
+	int b;
+
+	b = 0;
+	if(str == NULL)
+		return(0);
+	while(str[b])
+		b++;
+	b--;
+	while(ft_stn(str[b]) == 1)
+		b--;
+	b++;
+	return(b);
+}
+
 char **ft_split(char *str)
 {
 	int i;
 	int j;
 	int len;
+	int end_trim;
 	int word_count;
 	char **word;
 
 	i = 0;
 	j = 0;
 	len = 0;
+	end_trim = 0;
+	end_trim = ft_endtrim(str);
 	word_count = ft_wordcount(str);
 	word = (char **)malloc(sizeof(char *) * (word_count + 1));
 	if(word == NULL)
 		return(NULL);
-	while(word_count)
+//	while(word_count)
+	while(i < end_trim)
 	{
 		while(str[i] && ft_stn(str[i]) == 0)
 //		while(str[i] && (str[i] != ' ' && str[i] != '\t' && str[i] != '\n'))
@@ -108,10 +128,19 @@ char **ft_split(char *str)
 		j++;		
 		while(ft_stn(str[i])) /*i++ as long as str[i] is ' ', '\t', or '\n'*/
 			i++;
-		word_count--;
+//		word_count--;
 	}
 	word[j] = NULL;
 	return(word);
+}
+void ft_putstr(char *str)
+{
+	int i;
+
+	i = 0;
+	if(str)
+		while(str[i])
+			write(1, &str[i++], 1);
 }
 /*
 int main(int argc, char **argv)
@@ -137,7 +166,17 @@ int main(int argc, char **argv)
 int main (void)
 {
 	int i;
-	char *str = "This test is to \nsee   \n\nDoes \t\t  it work???   Or  NOT ";   
+	char *str = "This test is to \nsee   \n\nDoes \t\t  it work???   Or  NOT ";
+	
+//	char *str = "\
+//8bPz	  sobauVg6MBK\
+//\
+//ejy594UJns6uo4HG8uZ5Ex76lzLD2g\
+//	DBm\
+// n9beiUqChNra3\
+//   hwNrJPuoZe ";
+	char **word;
+   
 	i = 0;
 	word = ft_split(str);
 	while(word[i])
