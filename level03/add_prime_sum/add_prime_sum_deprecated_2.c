@@ -5,52 +5,55 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/07 10:35:03 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/07 12:04:02 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/01 19:59:01 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/01 20:40:35 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passed examshell*/
-
-#include <unistd.h> /*write(3)*/
-//#include <stdlib.h> /*atoi(3)*/
-//#include <stdio.h>  /*printf(3)*/
-
-int is_it_prime(int num)
+/*Passes examshell*/
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+int is_it_prime(int number)
 {
 	int i;
 
 	i = 2;
-	while(i < num)
+	while(i < number)
 	{
-		if((num%i) == 0)
+		if(number % i  == 0)
 			return(0);
 		i++;
 	}
 	return(1);
 }
-
 int ft_atoi(char *str)
 {
-	int nb;
 	int i;
+	int nb;
 	int sign;
 
-	nb = 0;
 	i = 0;
+	nb = 0;
 	sign = 1;
-	if(str[i] == '-' || str[i] == '+')
+
+	if(str[i] == '-')
 	{
-		if(str[i] == '-')
-			sign = -1;
+		i++;
+		sign = - 1;
+	}
+	while(str[i])
+	{
+		nb = 10 * nb + (str[i] - '0');
 		i++;
 	}
-	while(str[i] >= '0' && str[i] <= '9')
-		nb = (nb * 10) + (str[i++] - '0');
 	return(nb * sign);
 }
-
 void ft_putnbr(int num)
 {
+	int sign;
+
+	sign = 1;
+
 	if(num == -2147483648)
 	{
 		write(1, "-2147483648", 11);
@@ -59,7 +62,8 @@ void ft_putnbr(int num)
 	if(num < 0)
 	{
 		write(1, "-", 1);
-		num = num * - 1;
+		num = -1 * num;
+		sign = -1;
 	}
 	if(num >= 10)
 		ft_putnbr(num/10);
@@ -67,33 +71,37 @@ void ft_putnbr(int num)
 	write(1, &num, 1);
 }
 
-int add_prime_sum(int num)
+void add_prime_sum(int num)
 {
+	int i;
 	int total;
 
+	i = 2;
 	total = 0;
-	while(num >= 2)
+	if(num < 0)
 	{
-		if(is_it_prime(num) == 1)
-			total = total+ num;
-		num--;
+		write(1, "0\n", 2);
+		return ;
 	}
-	return(total);
+	while(i <= num)
+	{
+		if(is_it_prime(i) == 1)
+			total = i + total;
+		i++;
+	}
+	ft_putnbr(total);
+	write(1, "\n", 1);
 }
 
 int main(int argc, char **argv)
 {
-	int num;
-	int prime_sum;
-
+	int number;
 	if(argc != 2)
 	{
 		write(1, "0\n", 2);
 		return(0);
 	}
-	num = ft_atoi(argv[1]);
-	prime_sum = add_prime_sum(num);
-	ft_putnbr(prime_sum);
-	write(1, "\n", 1);
+	number = ft_atoi(argv[1]);
+	add_prime_sum(number);
 	return(0);
 }
