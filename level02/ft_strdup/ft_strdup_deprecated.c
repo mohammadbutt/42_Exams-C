@@ -5,38 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/07 10:11:55 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/07 10:31:25 by mbutt            ###   ########.fr       */
+/*   Created: 2019/05/25 19:25:01 by mbutt             #+#    #+#             */
+/*   Updated: 2019/05/25 20:11:54 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passes examshell*/
 
-#include <string.h> /*strdup(3)*/
-#include <stdio.h>  /*printf(3)*/
-#include <stdlib.h> /*malloc(3)*/
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int ft_strlen(char *str)
-{
-	int i;
-
-	i = 0;
-	if(str)
-		while(str[i])
-			i++;
-	return(i);
-}
-
+char *ft_strdup(char *src);
+int ft_strlen(char *string);
 char *ft_strdup(char *src)
 {
-	int i;
-	int len;
 	char *dest;
-
+	int i;
 	i = 0;
-	len = ft_strlen(src);
-	dest = (char *)malloc(sizeof(char) * (len + 1));
-	if(dest == NULL)
-		return(NULL);
+
+	dest = (char *)malloc(sizeof(char) * (ft_strlen(src) + 1));
 	while(src[i])
 	{
 		dest[i] = src[i];
@@ -45,13 +31,25 @@ char *ft_strdup(char *src)
 	dest[i] = '\0';
 	return(dest);
 }
+int ft_strlen(char *string)
+{
+	int i;
+	
+	i = 0;
+	while(string[i])
+		i++;
+	return(i);
+}
 /*
 int main(void)
 {
-	char source[] = "This is a test to break this long long string";
-	char *dest = "Testing a different test to see does it write on to destination?";
-	
-	dest = ft_strdup(source);
-	printf("|%s|\n", dest);
+	char source1[] = "This is a test";
+	char *dest;
+
+	dest = ft_strdup(source1);
+
+	printf("%s\n", dest);
+	free(dest);
+	return(0);
 }
 */
