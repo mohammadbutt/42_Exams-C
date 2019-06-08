@@ -5,27 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/08 11:32:32 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/08 11:42:47 by mbutt            ###   ########.fr       */
+/*   Created: 2019/04/28 19:10:25 by mbutt             #+#    #+#             */
+/*   Updated: 2019/04/28 19:17:35 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passes examshell*/
 
-#include <unistd.h> /*write(3)*/
+#include <unistd.h>
 
-void first_param(char *str)
-{
-	int i;
-
-	i = 0;
-	if(str)
-		while(str[i])
-			write(1, &str[i++], 1);
-}
-
-int main(int argc, char **argv)
+int main (int argc, char **argv)
 {
 	if(argc >= 2)
-		first_param(argv[1]);
+	{
+		while(*argv[1])
+			write(1, argv[1]++, 1);
+	}
 	write(1, "\n", 1);
+	return (0);
 }
