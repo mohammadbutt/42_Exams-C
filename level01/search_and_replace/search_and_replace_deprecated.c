@@ -5,43 +5,53 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/08 11:45:15 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/08 11:56:40 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/02 12:45:22 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/02 13:36:01 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Passes examshell*/
 
-#include <unistd.h> /*write(3)*/
+#include <unistd.h>
 
 int ft_strlen(char *str)
 {
 	int i;
 
 	i = 0;
-	if(str)
-		while(str[i])
-			i++;
+	if(str == NULL)
+		return(0);
+	while(str[i])
+		i++;
 	return(i);
 }
 
-void search_and_replace(char *str1, char *str2, char *str3)
+void search_and_replace(char *str, char *c1, char *c2)
 {
 	int i;
 
 	i = 0;
-	if(str1 == NULL || (ft_strlen(str2) != 1 && ft_strlen(str3) != 1))
-		return ;
-	while(str1[i])
+	if(ft_strlen(c1) != 1 || ft_strlen(c2) != 1)
 	{
-		if(str1[i] == str2[0])
-			str1[i] = str3[0];
-		write(1, &str1[i++], 1);
+		write(1, "\n", 1);
+		return ;
 	}
+	while(str[i])
+	{
+		if(str[i] == c1[0])
+			str[i] = c2[0];
+		write(1, &str[i], 1);
+		i++;
+	}
+	write(1, "\n", 1);
 }
 
-int main(int argc, char **argv)
+int main (int argc, char **argv)
 {
-	if(argc == 4)
-		search_and_replace(argv[1], argv[2], argv[3]);
-	write(1, "\n", 1);
+	if(argc != 4)
+	{
+		write(1, "\n", 1);
+		return(0);
+	}
+	search_and_replace(argv[1], argv[2], argv[3]);
+	return(0);
 }
