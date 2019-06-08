@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/08 12:06:32 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/08 12:27:17 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/05 18:23:33 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/05 18:52:35 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Passes examshell*/
@@ -22,6 +22,7 @@ void ft_putstr(char *str)
 		while(str[i])
 			write(1, &str[i++], 1);
 }
+
 void wdmatch(char *str1, char *str2)
 {
 	int i;
@@ -29,26 +30,24 @@ void wdmatch(char *str1, char *str2)
 
 	i = 0;
 	j = 0;
-
 	while(str1[i])
 	{
 		if(str1[i] == str2[j])
-			i++;
-		if(str2[j] == '\0') /*Footnotes 1.0*/
-			return ;
-		j++;
+			i++;	
+		if(str2[j] == '\0') /*If we get to the end of string2 before we get*/
+			return ;		/*to end of string1, it means string1 had elements*/
+		j++;				/*which were not found in string2*/
 	}
 	ft_putstr(str1);
 }
-/*
-** Footnotes 1.0 - If we get to the end of string2 before we get to end of
-** string1, it means string1 had elements which were not found in string2 and
-** we can end the program by calling return. 
-*/
-
 int main(int argc, char **argv)
 {
-	if(argc == 3)
-		wdmatch(argv[1], argv[2]);
+	if(argc != 3)
+	{
+		write(1, "\n", 1);
+		return(0);
+	}
+	wdmatch(argv[1], argv[2]);
 	write(1, "\n", 1);
+	return(0);
 }
