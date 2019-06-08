@@ -5,21 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/08 13:51:34 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/08 14:24:00 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/03 15:23:11 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/03 15:38:40 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passes examshell*/
+/*Did not tun it in examshell. But passed personal tests*/
 
-#include <stdlib.h> /*malloc(3)*/
 #include <stdio.h>  /*printf(3)*/
+#include <stdlib.h> /*free(3)*/
 
-int ft_numlen(int num)
+int ft_numlen(num)
 {
 	int i;
 
 	i = 0;
-	if(num < 0)
+	if(num <= 0)
 		i++;
 	while(num)
 	{
@@ -28,50 +28,39 @@ int ft_numlen(int num)
 	}
 	return(i);
 }
-
 char *ft_itoa(int nbr)
 {
-	int numlen;
+	int len;
+	int sign;
 	char *str;
 
-	numlen = ft_numlen(nbr);
-	str = (char *)malloc(sizeof(char) * (numlen + 1));
-	if(nbr == -2147483648)
-		return("-2147483648");
+	len = ft_numlen(nbr);
+	sign = 1;
+	str = (char *)malloc(sizeof(char) * (len +1));
+	str[len] = '\0';
+	len--;
 	if(nbr == 0)
 		return("0");
 	if(nbr < 0)
 	{
-		str[0] = '-';
+		sign = -1;
 		nbr = -1 * nbr;
+		str[0] = '-';
 	}
-	str[numlen] = '\0';
-	numlen--;
 	while(nbr)
 	{
-		str[numlen] = nbr%10 + '0';
-		numlen--;
-		nbr = nbr/10;
+		str[len] = nbr%10 + '0';
+		nbr = nbr / 10;
+		len--;
 	}
 	return(str);
 }
 /*
-int main(void)
+int main (void)
 {
-	int num1 = 0;
-	int num2 = -22;
-	int num3 = -333;
-	int num4 = -4444;
-	int num5 = -55555;
-	int num6 = -2147483647;
-	int num7 = '\0';
+	int num = -4578;
 
-	printf("|%s|\n", ft_itoa(num1));
-	printf("|%s|\n", ft_itoa(num2));
-	printf("|%s|\n", ft_itoa(num3));
-	printf("|%s|\n", ft_itoa(num4));
-	printf("|%s|\n", ft_itoa(num5));
-	printf("|%s|\n", ft_itoa(num6));
-	printf("|%s|\n", ft_itoa(num7));
+	printf("%s\n", ft_itoa(num));
+	return(0);
 }
 */
