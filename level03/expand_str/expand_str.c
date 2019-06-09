@@ -5,44 +5,59 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/28 18:33:41 by mbutt             #+#    #+#             */
-/*   Updated: 2019/05/28 19:20:58 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/09 13:53:24 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/09 14:55:39 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Passes examshell*/
 
-#include <unistd.h>
+#include <unistd.h> /*write(3)*/
 
-int main (int argc, char **argv)
+int ft_space(int c)
+{
+	if(c == ' ' || c == '\t')
+		return(1);
+	return(0);
+}
+
+int ft_wordcount(char *str)
 {
 	int i;
-	int b;
-	int first_space;
+	int count;
 
 	i = 0;
-	b = 0;
-	first_space = 0;
-	if (argc != 2)
+	count = 0;
+	while(str[i])
 	{
-		write(1, "\n", 1);
-		return (0);
-	}
-	while(argv[1][i] == '\t' || argv[1][i] == ' ')
+		if((ft_space(str[i]) != 1) && ((ft_space(str[i+1]) == 1) || str[i+1] == '\0'))
+			count++;
 		i++;
-	first_space = i;
-	while(argv[1][b])
-		b++;
-	b--;
-	while(argv[1][b] == '\t' || argv[1][b] == ' ')
-		b--;
-	while(i <= b)
+	}
+	return(count);
+}
+
+void expand_str(char *str)
+{
+	int i;
+	int wordcount;
+
+	i = 0;
+	wordcount = ft_wordcount(str);
+	while(wordcount)
 	{
-		while ((argv[1][i] == '\t') || (argv[1][i] == ' '))
+		while(ft_space(str[i]) == 1)
 			i++;
-		if((i != first_space) && (argv[1][i-1] == '\t' || argv[1][i-1] == ' '))
+		while(str[i] && ft_space(str[i]) != 1)
+			write(1, &str[i++], 1);
+		if(ft_space(str[i]) == 1 && wordcount > 1)
 			write(1, "   ", 3);
-		write(1, &argv[1][i], 1);
-		i++;
+		wordcount--;
 	}
+}
+
+int main(int argc, char **argv)
+{
+	if(argc == 2)
+		expand_str(argv[1]);
 	write(1, "\n", 1);
-	return(0);
 }
