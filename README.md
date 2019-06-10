@@ -33,7 +33,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[rev_print](level01/rev_print/subject.en.txt)                  |[:book:](level01/rev_print/rev_print.c)                   |
 |[rot_13](level01/rot_13/subject.en.txt)                        |[:book:](level01/rot_13/rot_13.c)                         |
 |[rotone](level01/rotone/subject.en.txt)                        |[:book:](level01/rotone/rotone.c)                         |
-|[search_and_replace](level01/search_and_replace/subject.en.txt)|[:book:](level01/search_and_replace/search_and_replace.c)|
+|[search_and_replace](level01/search_and_replace/subject.en.txt)|[:book:](level01/search_and_replace/search_and_replace.c) |
 |[ulstr](level01/ulstr/subject.en.txt)                          |[:book:](level01/ulstr/ulstr.c)                           |
 </details>
 
@@ -91,7 +91,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[fprime](level04/fprime/subject.en.txt)                        |[:book:](level04/fprime/fprime.c)                         |
 |[ft_itoa](level04/ft_itoa/subject.en.txt)                      |[:book:](level04/ft_itoa/ft_itoa.c)                       |
 |[ft_list_foreach](level04/ft_list_foreach/subject.en.txt)      |[:book:](level04/ft_list_foreach/ft_list_foreach.c) [:scroll:](level04/ft_list_foreach/ft_list.h)|
-|[ft_split](level04/ft_split/subject.en.txt)                    |[:book:](level04/ft_split/ft_split_no_notes.c) [:books:](level04/ft_split/ft_split.c)                  |
+|[ft_split](level04/ft_split/subject.en.txt)                    |[:book:](level04/ft_split/ft_split_no_notes.c) [:books:](level04/ft_split/ft_split.c)                |
 |[rev_wstr](level04/rev_wstr/subject.en.txt)                    |[:book:](level04/rev_wstr/rev_wstr.c)                     |
 |[rostring](level04/rostring/subject.en.txt)                    |[:question:](level04/rostring/rostring.c)                 |
 |[sort_int_tab](level04/sort_int_tab/subject.en.txt)            |[:book:](level04/sort_int_tab/sort_int_tab.c)             |
@@ -105,4 +105,5 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[brackets](level05/brackets/subject.en.txt)                    |[:book:](level05/brackets/brackets.c)                     |
 |[ft_itoa_base](level05/ft_itoa_base/subject.en.txt)            |[:book:](level05/ft_itoa_base/ft_itoa_base.c)             |
+|[rpn_calc](level05/rpn_calc/subject.en.txt)                    |[:question:](level05/rpn_calc/rpn_calc.c)                 |
 </details>
