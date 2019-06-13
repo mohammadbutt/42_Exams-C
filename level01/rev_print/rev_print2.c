@@ -5,13 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/13 13:41:52 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/13 13:48:49 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/02 18:20:40 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/02 18:28:19 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Passes examshell*/
 
-#include <unistd.h> /*write(2)*/
+#include <unistd.h>
 
 void rev_print(char *str)
 {
@@ -23,11 +23,15 @@ void rev_print(char *str)
 	i--;
 	while(str[i])
 		write(1, &str[i--], 1);
+	write(1, "\n", 1);
 }
 
-int main(int argc, char **argv)
+int main (int argc, char **argv)
 {
-	if(argc == 2)
-		rev_print(argv[1]);
-	write(1, "\n", 1);
+	if(argc != 2)
+	{
+		write(1, "\n", 1);
+		return(0);
+	}
+	rev_print(argv[1]);
 }
