@@ -9,9 +9,10 @@
 /*   Updated: 2019/05/31 14:47:04 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Passes examshell*/
 
 #include <unistd.h>
-/*Passes examshell*/
+
 int hidenp(char *str1, char *str2)
 {
 	int i;
