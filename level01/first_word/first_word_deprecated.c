@@ -5,28 +5,26 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/14 12:51:19 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/14 13:00:50 by mbutt            ###   ########.fr       */
+/*   Created: 2019/04/28 19:19:01 by mbutt             #+#    #+#             */
+/*   Updated: 2019/04/30 19:37:19 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passes examshell*/
 
-#include <unistd.h> /*write(2)*/
+#include <unistd.h>
 
-void first_word(char *str)
+int main (int argc, char **argv)
 {
-	int i;
-
-	i = 0;
-	while(str[i] == ' ' || str[i] == '\t')
-		i++;
-	while(str[i] && (str[i] != ' ' && str[i] != '\t'))
-		write(1, &str[i++], 1);
-}
-
-int main(int argc, char **argv)
-{
-	if(argc == 2)
-		first_word(argv[1]);
+	if (argc == 2)
+	{
+		while(*argv[1] == ' ' || *argv[1] == '\t')
+			argv[1]++;
+		while(*argv[1])
+		{
+			if (*argv[1] == ' ' || *argv[1] == '\t')
+				break;
+			write(1, argv[1]++, 1);
+		}
+	}
 	write(1, "\n", 1);
+	return(0);
 }
