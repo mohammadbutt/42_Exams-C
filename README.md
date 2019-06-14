@@ -104,6 +104,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[brackets](level05/brackets/subject.en.txt)                    |[:book:](level05/brackets/brackets.c)                     |
+|[check_mate](level05/check_mate/subject.en.txt)                |[:question:](level05/check_mate/check_mate.c)             |
 |[ft_itoa_base](level05/ft_itoa_base/subject.en.txt)            |[:book:](level05/ft_itoa_base/ft_itoa_base.c)             |
 |[options](level05/options/subject.en.txt)                      |[:question:](level05/options/options.c)                   |
 |[rpn_calc](level05/rpn_calc/subject.en.txt)                    |[:question:](level05/rpn_calc/rpn_calc.c)                 |
