@@ -9,10 +9,9 @@
 /*   Updated: 2019/05/25 15:01:40 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Passes examshell*/
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdio.h>
+#include <unistd.h> /*write(2)*/
 
 int main(void)
 {
@@ -20,5 +19,4 @@ int main(void)
 
 	c = 'a';
 	write(1, &c, 1);
-	return(0);
 }
