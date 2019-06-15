@@ -9,11 +9,12 @@
 /*   Updated: 2019/05/26 18:21:42 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Did not pass examshell. See exam trace*/
 
-#include <unistd.h> /*write*/
-#include <stdlib.h> /*for atoi to test if ft_atoi works like atoi*/
-#include <stdio.h>  /*for printf*/
-/*Did not pass mouli examshell*/
+#include <unistd.h> /*write(2)*/
+#include <stdlib.h> /*atoi(3)*/
+#include <stdio.h>  /*printf(3)*/
+
 void print_hex(unsigned int num)
 {
 	char *str;
