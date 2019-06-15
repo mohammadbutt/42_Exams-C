@@ -49,7 +49,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[ft_strcmp](level02/ft_strcmp/subject.en.txt)                  |[:book:](level02/ft_strcmp/ft_strcmp.c)                   |
 |[ft_strdup](level02/ft_strdup/subject.en.txt)                  |[:book:](level02/ft_strdup/ft_strdup.c)                   |
 |[ft_strrev](level02/ft_strrev/subject.en.txt)                  |[:book:](level02/ft_strrev/ft_strrev.c)                   |
-|[ft_strspn](level02/ft_strspn/subject.en.txt)                  |[:x:](level02/ft_strspn/ft_strspn.c)                      |
+|[ft_strspn](level02/ft_strspn/subject.en.txt)                  |[:negative_squared_cross_mark:](level02/ft_strspn/ft_strspn.c)                      |
 |[inter](level02/inter/subject.en.txt)                          |[:book:](level02/inter/inter.c)                           |
 |[is_power_of_2](level02/is_power_of_2/subject.en.txt)          |[:book:](level02/is_power_of_2/is_power_of_2.c)           |
 |[last_word](level02/last_word/subject.en.txt)                  |[:book:](level02/last_word/last_word.c)                   |
@@ -77,7 +77,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[lcm](level03/lcm/subject.en.txt)                              |[:book:](level03/lcm/lcm.c)                               |
 |[paramsum](level03/paramsum/subject.en.txt)                    |[:book:](level03/paramsum/paramsum.c)                     |
 |[pgcd](level03/pgcd/subject.en.txt)                            |[:book:](level03/pgcd/pgcd.c)                             |
-|[print_hex](level03/print_hex/subject.en.txt)                  |[:x:](level03/print_hex/print_hex.c)                   |
+|[print_hex](level03/print_hex/subject.en.txt)                  |[:negative_squared_cross_mark:](level03/print_hex/print_hex.c)                   |
 |[rstr_capitalizer](level03/rstr_capitalizer/subject.en.txt)    |[:book:](level03/rstr_capitalizer/rstr_capitalizer.c)     |
 |[str_capitalizer](level03/str_capitalizer/subject.en.txt)      |[:book:](level03/str_capitalizer/str_capitalizer.c)       |
 |[tab_mult](level03/tab_mult/subject.en.txt)                    |[:book:](level03/tab_mult/tab_mult.c)                     |
