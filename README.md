@@ -49,7 +49,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[ft_strcmp](level02/ft_strcmp/subject.en.txt)                  |[:book:](level02/ft_strcmp/ft_strcmp.c)                   |
 |[ft_strdup](level02/ft_strdup/subject.en.txt)                  |[:book:](level02/ft_strdup/ft_strdup.c)                   |
 |[ft_strrev](level02/ft_strrev/subject.en.txt)                  |[:book:](level02/ft_strrev/ft_strrev.c)                   |
-|[ft_strspn](level02/ft_strspn/subject.en.txt)                  |[:cross:](level02/ft_strspn/ft_strspn.c)               |
+|[ft_strspn](level02/ft_strspn/subject.en.txt)                  |[:x:](level02/ft_strspn/ft_strspn.c)                      |
 |[inter](level02/inter/subject.en.txt)                          |[:book:](level02/inter/inter.c)                           |
 |[is_power_of_2](level02/is_power_of_2/subject.en.txt)          |[:book:](level02/is_power_of_2/is_power_of_2.c)           |
 |[last_word](level02/last_word/subject.en.txt)                  |[:book:](level02/last_word/last_word.c)                   |
