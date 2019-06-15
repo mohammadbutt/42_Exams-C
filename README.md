@@ -77,7 +77,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[lcm](level03/lcm/subject.en.txt)                              |[:book:](level03/lcm/lcm.c)                               |
 |[paramsum](level03/paramsum/subject.en.txt)                    |[:book:](level03/paramsum/paramsum.c)                     |
 |[pgcd](level03/pgcd/subject.en.txt)                            |[:book:](level03/pgcd/pgcd.c)                             |
-|[print_hex](level03/print_hex/subject.en.txt)                  |[:book:](level03/print_hex/print_hex.c)                   |
+|[print_hex](level03/print_hex/subject.en.txt)                  |[:X:](level03/print_hex/print_hex.c)                   |
 |[rstr_capitalizer](level03/rstr_capitalizer/subject.en.txt)    |[:book:](level03/rstr_capitalizer/rstr_capitalizer.c)     |
 |[str_capitalizer](level03/str_capitalizer/subject.en.txt)      |[:book:](level03/str_capitalizer/str_capitalizer.c)       |
 |[tab_mult](level03/tab_mult/subject.en.txt)                    |[:book:](level03/tab_mult/tab_mult.c)                     |
