@@ -28,6 +28,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[first_word](level01/first_word/subject.en.txt)                |[:book:](level01/first_word/first_word.c)                 |
 |[ft_strcpy](level01/ft_strcpy/subject.en.txt)                  |[:book:](level01/ft_strcpy/ft_strcpy.c)                   |
+|[ft_strlen](level01/ft_strlen/subject.en.txt)                  |[:book:](level01/ft_strlen/ft_strlen.c)                   |
 |[ft_swap](level01/ft_swap/subject.en.txt)                      |[:book:](level01/ft_swap/ft_swap.c)                       |
 |[repeat_alpha](level01/repeat_alpha/subject.en.txt)            |[:book:](level01/repeat_alpha/repeat_alpha.c)             |
 |[rev_print](level01/rev_print/subject.en.txt)                  |[:book:](level01/rev_print/rev_print.c)                   |
