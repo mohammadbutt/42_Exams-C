@@ -5,11 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/16 14:03:41 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/16 14:07:44 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/16 14:28:54 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/16 14:32:23 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Should pass examshell*/
+/*Passed examshell*/
 
 #include <unistd.h> /*write(2)*/
 
@@ -52,5 +52,8 @@ void fizz_buzz(int num)
 
 int main(void)
 {
-	fizz_buzz(1);
+	int num;
+
+	num = 1;
+	fizz_buzz(num);
 }
