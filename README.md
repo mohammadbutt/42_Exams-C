@@ -27,7 +27,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[first_word](level01/first_word/subject.en.txt)                |[:book:](level01/first_word/first_word.c)                 |
-|[fizz_buzz](level01/fizzbuzz/subject.en.txt)                   |[:question:](level01/fizzbuzz/fizzbuzz.c)                 |
+|[fizz_buzz](level01/fizzbuzz/subject.en.txt)                   |[:book:](level01/fizzbuzz/fizzbuzz.c)                 |
 |[ft_strcpy](level01/ft_strcpy/subject.en.txt)                  |[:book:](level01/ft_strcpy/ft_strcpy.c)                   |
 |[ft_strlen](level01/ft_strlen/subject.en.txt)                  |[:book:](level01/ft_strlen/ft_strlen.c)                   |
 |[ft_swap](level01/ft_swap/subject.en.txt)                      |[:book:](level01/ft_swap/ft_swap.c)                       |
