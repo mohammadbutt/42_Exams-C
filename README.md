@@ -48,6 +48,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[do_op](level02/do_op/subject.en.txt)                          |[:book:](level02/do_op/do_op.c)                           |
 |[ft_atoi](level02/ft_atoi/subject.en.txt)                      |[:book:](level02/ft_atoi/ft_atoi.c)                       |
 |[ft_strcmp](level02/ft_strcmp/subject.en.txt)                  |[:book:](level02/ft_strcmp/ft_strcmp.c)                   |
+|[ft_strcspn](level02/ft_strcspn/subject.en.txt)                |[:question:](level02/ft_strcspn/ft_strcspn.c)             |
 |[ft_strdup](level02/ft_strdup/subject.en.txt)                  |[:book:](level02/ft_strdup/ft_strdup.c)                   |
 |[ft_strrev](level02/ft_strrev/subject.en.txt)                  |[:book:](level02/ft_strrev/ft_strrev.c)                   |
 |[ft_strspn](level02/ft_strspn/subject.en.txt)                  |[:x:](level02/ft_strspn/ft_strspn.c)                      |
