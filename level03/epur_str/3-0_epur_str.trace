@@ -1,0 +1,115 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r8p7.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Sat Jun 15 19:35:52 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190616/mbutt
+
+= Git history ==================================================================
+$> git -C /var/folders/1l/sc84_5rn5y7dwbxk308fbbfr0000gp/T/tmp4PHi0V/user log --pretty='%H - %an, %ad : %s'
+a5bc4b0e669d0f955bb90e184d0330ea33083720 - Mohammad Butt, Sat Jun 15 19:34:40 2019 -0700 : Did epur_str
+686a2219462888bf90b43c827fef508de007d6b7 - Mohammad Butt, Sat Jun 15 18:57:00 2019 -0700 : Did last_word
+9ba3d48a5a3e5d0204e7d34f7ea65e8ca2e2fe85 - Mohammad Butt, Sat Jun 15 18:37:02 2019 -0700 : pushing ft_strlen
+0f3b0d9119c9523562a1ae2389afc98dcdf99bc4 - Mohammad Butt, Sat Jun 15 18:28:37 2019 -0700 : Did only_a
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/1l/sc84_5rn5y7dwbxk308fbbfr0000gp/T/tmp4PHi0V/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1000 Jun 15 19:35 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 15 19:35 epur_str
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 15 19:35 ft_strlen
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 15 19:35 last_word
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 15 19:35 only_a
+
+/var/folders/1l/sc84_5rn5y7dwbxk308fbbfr0000gp/T/tmp4PHi0V/user/epur_str:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1376 Jun 15 19:35 epur_str.c
+
+/var/folders/1l/sc84_5rn5y7dwbxk308fbbfr0000gp/T/tmp4PHi0V/user/ft_strlen:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1154 Jun 15 19:35 ft_strlen.c
+
+/var/folders/1l/sc84_5rn5y7dwbxk308fbbfr0000gp/T/tmp4PHi0V/user/last_word:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1267 Jun 15 19:35 last_word.c
+
+/var/folders/1l/sc84_5rn5y7dwbxk308fbbfr0000gp/T/tmp4PHi0V/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  951 Jun 15 19:35 only_a.c
+ 
+= epur_str =====================================================================
+$> gcc -Wextra -Wall -Werror epur_str.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ccp1xmlzf8yaz6a5zkyhlq95 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./6t4wsoa3v4ftkwv5x1a1od3s 
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./i0c9an3moi34duv3uwr07dj2 "salut" "a" "tous" "tout" "le" "monde"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./8so9u25h65qdse57bimppyb2 "OAZhjdLBCV1o3k"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./osv4ujvqhy0i7jp5d8dfl41e "fkHh"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./69n8mf7f4j14bpu7hpo7u82g "QPaNYFsAJfOCh"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./kysss8kd7qhbzgw020jaa3bc "jAun9NxhTZqMCYUF6 WjEbLy jqalVJvm i9xzVrDb 9muzl106eZ5V V075cIhv I3nL JX9Rncs"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./wvkbvawj315ag0v0ykg939wq "D6cXAFqRQyaPB9S a8tjcl5J wghoCb lxM3DmBnWIfe vWxfO4cH xaHI13 IxRpajbQX8N PHYZIXKpVE"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./pg4fpc5ulal1x3h4e1atav51 "0df19omJ37rc seET6quJmQlp0iW RtxO40pXSzocn z5cZ4ps9lArSew x6MvX82cf qj0mWNIvsXy Wx4YnIKtoEuVvA 0lRZ KXybmuLpj1 ya2s sO8G kbBC38UEodrj 284PCZM zQSlDAdmY9ya6WV rpcwshkNf9t3 xqVKvjeh7NGk 4WBim0hzQUl7n odeHzpgCh0yF"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./lyye0jsq900h3mtq5j39wjn3 "	   	AIZGnd3m   		Vz38	  7PNnd	   MYSrRkjl 	OrG8yDt 	 uqSPAC6lNa4I		 	 nlT6zEc2usa9rJdOV SlQry		  P1B84RACH	 			"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+--- user_output_test10	2019-06-15 19:35:57.000000000 -0700$
++++ test10.output	2019-06-15 19:35:57.000000000 -0700$
+@@ -1 +1 @@$
+-AIZGnd3m	Vz38 7PNnd MYSrRkjl	OrG8yDt uqSPAC6lNa4I nlT6zEc2usa9rJdOV SlQry P1B84RACH$
++AIZGnd3m Vz38 7PNnd MYSrRkjl OrG8yDt uqSPAC6lNa4I nlT6zEc2usa9rJdOV SlQry P1B84RACH$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
