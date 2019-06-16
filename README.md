@@ -69,6 +69,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[add_prime_sum](level03/add_prime_sum/subject.en.txt)          |[:book:](level03/add_prime_sum/add_prime_sum.c)           |
+|[epur_str](level03/epur_str/subject.en.txt)                    |[:x:](level03/epur_str/spur_str.c)                        |
 |[expand_str](level03/expand_str/subject.en.txt)                |[:book:](level03/expand_str/expand_str.c)                 |
 |[ft_atoi_base](level03/ft_atoi_base/subject.en.txt)            |[:question:](level03/ft_atoi_base/ft_atoi_base.c)         |
 |[ft_list_size](level03/ft_list_size/subject.en.txt)            |[:book:](level03/ft_list_size/ft_list_size.c) [:scroll:](level03/ft_list_size/ft_list.h)|
