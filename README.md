@@ -59,7 +59,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[max](level02/max/subject.en.txt)                              |[:book:](level02/max/max.c)                               |
 |[print_bits](level02/print_bits/subject.en.txt)                |[:book:](level02/print_bits/print_bits.c)                 |
 |[reverse_bits](level02/reverse_bits/subject.en.txt)            |[:book:](level02/reverse_bits/reverse_bits.c)             |
-|[snake_to_camel](level02/snake_to_camel/subject.en.txt)        |[:question:](level02/snake_to_camel/snake_to_camel.c)     |
+|[snake_to_camel](level02/snake_to_camel/subject.en.txt)        |[:book:](level02/snake_to_camel/snake_to_camel.c)     |
 |[swap_bits](level02/swap_bits/subject.en.txt)                  |[:book:](level02/swap_bits/swap_bits.c)                   |
 |[union](level02/union/subject.en.txt)                          |[:book:](level02/union/union.c)                           |
 |[wdmatch](level02/wdmatch/subject.en.txt)                      |[:book:](level02/wdmatch/wdmatch.c)                       |
