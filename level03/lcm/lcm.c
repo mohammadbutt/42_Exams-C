@@ -38,11 +38,16 @@ int main (void)
 {
 	unsigned int num1;
 	unsigned int num2;
+	unsigned int num3;
+	unsigned int num4;
 
 	num1 = 4;
 	num2 = 3;
 
-	printf("%d", lcm(num1, num2));
+	num3 = 3;
+	num4 = (unsigned int)NULL;
 
+	printf("%d\n", lcm(num1, num2));
+	printf("%d\n", lcm(num3, num4));
 }
 */
