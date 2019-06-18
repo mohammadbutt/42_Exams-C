@@ -1,0 +1,89 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r7p48.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Mon Jun 17 22:21:05 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190618/mbutt
+
+= Git history ==================================================================
+$> git -C /var/folders/37/68j0p7m53mn32f8b4x4jc6m80000gp/T/tmpuBgDXd/user log --pretty='%H - %an, %ad : %s'
+5b48681f35c84ee9a9b539a828ba0ffadee8b4dd - Mohammad Butt, Mon Jun 17 22:19:20 2019 -0700 : Fixed tinny bug
+5c96a24cb17d81beced20d825c079d300716f4ea - Mohammad Butt, Mon Jun 17 22:05:07 2019 -0700 : Did options
+fb2fc8d53fae90a849889458546f65b0923b0571 - Mohammad Butt, Mon Jun 17 21:02:07 2019 -0700 : Did sort_int_tab
+d36853fcbf2fed29e75477d036bb4d35942d110a - Mohammad Butt, Mon Jun 17 20:05:05 2019 -0700 : Did print_hex
+d55bd712dd941ebb74d9733326e49db87f493316 - Mohammad Butt, Mon Jun 17 19:29:04 2019 -0700 : Did wdmatch
+81862fa26387b9854cbd9c8af93426ac150c0339 - Mohammad Butt, Mon Jun 17 19:19:44 2019 -0700 : quick check
+960222da415f19ed5f472046154e3a8fe413479e - Mohammad Butt, Mon Jun 17 19:18:22 2019 -0700 : Added ft_putstr
+d9de0864df36a45eacc99fc71352cc8976e2670c - Mohammad Butt, Mon Jun 17 19:14:31 2019 -0700 : Did ft_countdown
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/37/68j0p7m53mn32f8b4x4jc6m80000gp/T/tmpuBgDXd/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2104 Jun 17 22:21 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 17 22:21 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 17 22:21 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 17 22:21 options
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 17 22:21 print_hex
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 17 22:21 sort_int_tab
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 17 22:21 wdmatch
+
+/var/folders/37/68j0p7m53mn32f8b4x4jc6m80000gp/T/tmpuBgDXd/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1065 Jun 17 22:21 ft_countdown.c
+
+/var/folders/37/68j0p7m53mn32f8b4x4jc6m80000gp/T/tmpuBgDXd/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1087 Jun 17 22:21 ft_putstr.c
+
+/var/folders/37/68j0p7m53mn32f8b4x4jc6m80000gp/T/tmpuBgDXd/user/options:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2394 Jun 17 22:21 options.c
+
+/var/folders/37/68j0p7m53mn32f8b4x4jc6m80000gp/T/tmpuBgDXd/user/print_hex:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1397 Jun 17 22:21 print_hex.c
+
+/var/folders/37/68j0p7m53mn32f8b4x4jc6m80000gp/T/tmpuBgDXd/user/sort_int_tab:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1322 Jun 17 22:21 sort_int_tab.c
+
+/var/folders/37/68j0p7m53mn32f8b4x4jc6m80000gp/T/tmpuBgDXd/user/wdmatch:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1302 Jun 17 22:21 wdmatch.c
+ 
+= options ======================================================================
+$> gcc -Wextra -Wall -Werror options.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./xdvn9x9826ma0axhydzxjrp7 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./qmt10cpnvk8n2hlgua3xczjf -abcz -w -ijfek -lildali -pirmakn -apizobouzaguoca
+$> diff -U 3 user_output_test2 test2.output | cat -e
+--- user_output_test2	2019-06-17 22:21:06.000000000 -0700$
++++ test2.output	2019-06-17 22:21:06.000000000 -0700$
+@@ -1 +1 @@$
+-00000010 01010010 11111111 01111111$
++38993791$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
