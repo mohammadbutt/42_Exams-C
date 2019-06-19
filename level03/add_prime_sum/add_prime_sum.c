@@ -10,7 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 /*Passed examshell*/
-
+/*There's a slighlty different version, that increments i differently in ft_atoi
+   and is_it_prime. And add_prime_sum is also done differently
+   https://github.com/mohammadbutt/42_Exams-C/blob/master/level03/add_prime_sum/add_prime_sum_expanded.c
+*/
 #include <unistd.h>
 
 int ft_atoi(char *str)
