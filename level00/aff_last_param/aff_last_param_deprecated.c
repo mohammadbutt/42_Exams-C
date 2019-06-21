@@ -5,27 +5,35 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/21 08:44:31 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/21 08:53:02 by mbutt            ###   ########.fr       */
+/*   Created: 2019/05/26 11:47:49 by mbutt             #+#    #+#             */
+/*   Updated: 2019/05/26 11:56:58 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passed examshell*/
 
-#include <unistd.h> /*write(2)*/
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-void aff_last_param(char *str)
+int main (int argc, char **argv)
 {
 	int i;
+	int j;
 
-	i = 0;
-	if(str)
-		while(str[i])
-			write(1, &str[i++], 1);
-}
-
-int main(int argc, char **argv)
-{
-	if(argc > 1)
-		aff_last_param(argv[argc-1]);
+	i = 1;
+	j = 0;
+	if (argc < 2)
+	{
+		write(1, "\n", 1);
+		return(0);
+	}
+	while (argv[i])
+		i++;
+	i--;
+	while(argv[i][j])
+	{
+		write(1, &argv[i][j], 1);
+		j++;
+	}
 	write(1, "\n", 1);
+	return(0);
 }
