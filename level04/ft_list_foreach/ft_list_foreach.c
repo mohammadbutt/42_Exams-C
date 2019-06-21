@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 /*Passed examshell*/
+/*reference for main http://nigal.freeshell.org/42/exam-solutions/4-0-ft_list_foreach_MAIN.c*/
 
 #include "ft_list.h"
 #include <unistd.h> /*write(3)*/
