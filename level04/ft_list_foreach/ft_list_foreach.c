@@ -9,8 +9,10 @@
 /*   Updated: 2019/06/13 14:54:17 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passed examshell*/
-/*reference for main http://nigal.freeshell.org/42/exam-solutions/4-0-ft_list_foreach_MAIN.c*/
+/* Passed examshell*/
+/* Reference for main
+** http://nigal.freeshell.org/42/exam-solutions/4-0-ft_list_foreach_MAIN.c
+*/
 
 #include "ft_list.h"
 #include <unistd.h> /*write(3)*/
