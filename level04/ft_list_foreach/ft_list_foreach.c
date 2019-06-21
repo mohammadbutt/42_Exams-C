@@ -29,31 +29,47 @@ void ft_list_foreach(t_list *begin_list, void (*f)(void *))
 void ft_putstr(char *str)
 {
 	int i;
-
 	i = 0;
 	if(str)
 		while(str[i])
 			write(1, &str[i++], 1);
 }
 
-void	print_data(void *data)
+void print_data_with_line(void *data)
 {
 	ft_putstr(data);
 	write(1, "\n", 1);
 }
 
+void print_data_with_space(void *data)
+{
+	ft_putstr(data);
+	write(1, " ", 1);
+}
+
+t_list stored_data(t_list *test_list)
+{
+	test_list = malloc(sizeof(test_list));
+	test_list->data = "Hello";
+	test_list->next = malloc(sizeof(test_list));
+	test_list->next->data = "we";
+	test_list->next->next = malloc(sizeof(test_list));
+	test_list->next->next->data = "are";
+	test_list->next->next->next = malloc(sizeof(test_list));
+	test_list->next->next->next->data = "learning";
+	test_list->next->next->next->next = malloc(sizeof(test_list));
+	test_list->next->next->next->next->data = "structs";
+	test_list->next->next->next->next->next = NULL;
+	return(*test_list);
+}
+
 int	main(void)
 {
-	t_list *test_list;
-	test_list = malloc(sizeof(t_list));
-	test_list->data = "Hello";
-	test_list->next = malloc(sizeof(t_list));
-	test_list->next -> data = "This is a test";
-	test_list->next -> next = malloc(sizeof(t_list));
-	test_list->next -> next -> data = "Does it work?";
-	test_list->next -> next -> next = NULL;
 
-	ft_list_foreach(test_list, print_data);
+	t_list test_list;
+	test_list = stored_data(&test_list);
+	ft_list_foreach(&test_list, print_data_with_line);
+	ft_list_foreach(&test_list, print_data_with_space);
 	return (0);
 }
 */
