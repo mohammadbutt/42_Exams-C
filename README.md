@@ -102,7 +102,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[ft_list_remove_if](level04/ft_list_remove_if/subject.en.txt)  |[:question:](level04/ft_list_remove_if/ft_list_remove_if.c) [:question:](level04/ft_list_remove_if/ft_list.h)|
 |[ft_split](level04/ft_split/subject.en.txt)                    |[:book:](level04/ft_split/ft_split_no_notes.c) [:books:](level04/ft_split/ft_split.c)                |
 |[rev_wstr](level04/rev_wstr/subject.en.txt)                    |[:book:](level04/rev_wstr/rev_wstr.c)                     |
-|[rostring](level04/rostring/subject.en.txt)                    |[:question:](level04/rostring/rostring.c)                 |
+|[rostring](level04/rostring/subject.en.txt)                    |[:book:](level04/rostring/rostring.c)                     |
 |[sort_int_tab](level04/sort_int_tab/subject.en.txt)            |[:book:](level04/sort_int_tab/sort_int_tab.c)             |
 </details>
 
