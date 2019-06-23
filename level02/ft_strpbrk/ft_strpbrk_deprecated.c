@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/23 13:15:46 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/23 13:44:56 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/16 19:20:50 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/16 20:24:18 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Passed examshell*/
 
-#include <stdio.h>  /*printf(3)*/
-#include <string.h> /*strpbrk*/
+#include <stdio.h>	/*write(2)*/
+#include <string.h> /*strpbrk(3)*/
 
 int ft_strlen(char *str)
 {
@@ -25,39 +25,50 @@ int ft_strlen(char *str)
 	return(i);
 }
 
-char *ft_strpbrk(const char *s1, const char *s2 )
+
+char *ft_strpbrk(const char *s1, const char *s2)
 {
 	int i;
 	int j;
-	int len;
-
+	int s1_len;
 
 	i = 0;
 	j = 0;
-	len = ft_strlen((char *)s1);
-	while(len)
+	s1_len = ft_strlen((char *)s1);
+	if(s1 == NULL || s2 == NULL)
+		return(NULL);
+	while(s1_len)
 	{
-		while(s1[i])
+		while(s2[j])
 		{
-			if(s1[i] == s2[j])
+			if(s1[i] && s1[i] != s2[j])
+				j++;
+			else if(s1[i] == s2[j])
 				return((char *)s1+i);
-			if(s2[j] == '\0')
-				break;
-			j++;
 		}
 		j = 0;
 		i++;
-		len--;
+		s1_len--;
 	}
 	return(NULL);
 }
+
 /*
 int main(void)
 {
-	char *str1 = "abcd";
-	char *str2 = "efghmnbvcxz";
+	const char *str1_0 = "asda";
+	const char *str1_1 = NULL;
 
-	printf("   strpbrk: |%s|\n", strpbrk(str1, str2));
-	printf("ft_strpbrk: |%s|\n", strpbrk(str1, str2));
+	const char *str2_0 = "asda";
+	const char *str2_1 = NULL;
+
+	char *ret1;
+	char *ret2;
+
+	ret1 = strpbrk(str1_0, str1_1);
+	ret2 = ft_strpbrk(str2_0, str2_1);
+
+	printf("   ret:|%s|\n", ret1);
+	printf("ft_ret:|%s|\n\n", ret2);
 }
 */
