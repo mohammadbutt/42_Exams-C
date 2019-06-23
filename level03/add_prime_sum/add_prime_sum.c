@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 /*Passed examshell*/
 
-#include <unistd.h> /*write(3)*/
+#include <unistd.h> /*write(2)*/
 
 int ft_atoi(char *str)
 {
