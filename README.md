@@ -119,3 +119,12 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[print_memory](level05/print_memory/subject.en.txt)            |[:question:](level05/print_memory/print_memory.c)         |
 |[rpn_calc](level05/rpn_calc/subject.en.txt)                    |[:question:](level05/rpn_calc/rpn_calc.c)                 |
 </details>
+
+# To run the lldb debugger
+```
+gcc filename.c -g
+b main
+run
+gui
+```
+pressing `s` each time will progress the program 1 step forward.
