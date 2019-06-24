@@ -9,6 +9,7 @@
 /*   Updated: 2019/06/24 13:15:09 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Passed examshell*/
 
 #include <stdio.h>  /*printf(3)*/
 #include <stdlib.h> /*malloc(3)*/
