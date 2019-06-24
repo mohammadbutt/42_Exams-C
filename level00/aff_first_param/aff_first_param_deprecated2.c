@@ -5,15 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/24 11:31:49 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/24 11:41:05 by mbutt            ###   ########.fr       */
+/*   Created: 2019/06/08 11:32:32 by mbutt             #+#    #+#             */
+/*   Updated: 2019/06/08 11:42:47 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passed examshell*/
+/*Passes examshell*/
 
-#include <unistd.h> /*write(2)*/
+#include <unistd.h> /*write(3)*/
 
-void ft_putstr(char *str)
+void first_param(char *str)
 {
 	int i;
 
@@ -25,7 +25,7 @@ void ft_putstr(char *str)
 
 int main(int argc, char **argv)
 {
-	if(argc > 1)
-		ft_putstr(argv[1]);
+	if(argc >= 2)
+		first_param(argv[1]);
 	write(1, "\n", 1);
 }
