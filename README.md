@@ -120,7 +120,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[rpn_calc](level05/rpn_calc/subject.en.txt)                    |[:question:](level05/rpn_calc/rpn_calc.c)                 |
 </details>
 
-# To run the lldb debugger
+# Debug using LLDB
 ```
 gcc filename.c -g
 b main
