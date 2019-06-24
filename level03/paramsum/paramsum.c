@@ -32,5 +32,5 @@ int main(int argc, char **argv)
 /*
 ** 1.0 - if statement
 ** if(argc > 0 && **argv) is the same as below if statement
-** if(rgc > 0 && argv[0][0])
+** if(argc > 0 && argv[0][0])
 */
