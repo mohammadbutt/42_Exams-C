@@ -96,10 +96,10 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
     
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
-|[fprime](level04/fprime/subject.en.txt)                        |[:x:](level04/fprime/fprime.c)                         |
+|[fprime](level04/fprime/subject.en.txt)                        |[:question:](level04/fprime/fprime.c)                     |
 |[ft_itoa](level04/ft_itoa/subject.en.txt)                      |[:book:](level04/ft_itoa/ft_itoa.c)                       |
 |[ft_list_foreach](level04/ft_list_foreach/subject.en.txt)      |[:book:](level04/ft_list_foreach/ft_list_foreach.c) [:scroll:](level04/ft_list_foreach/ft_list.h)|
-|[ft_list_remove_if](level04/ft_list_remove_if/subject.en.txt)  |[:question:](level04/ft_list_remove_if/ft_list_remove_if.c) [:question:](level04/ft_list_remove_if/ft_list.h)|
+|[ft_list_remove_if](level04/ft_list_remove_if/subject.en.txt)  |[:x:](level04/ft_list_remove_if/ft_list_remove_if.c) [:question:](level04/ft_list_remove_if/ft_list.h)|
 |[ft_split](level04/ft_split/subject.en.txt)                    |[:book:](level04/ft_split/ft_split_no_notes.c) [:books:](level04/ft_split/ft_split.c)                |
 |[rev_wstr](level04/rev_wstr/subject.en.txt)                    |[:book:](level04/rev_wstr/rev_wstr.c)                     |
 |[rostring](level04/rostring/subject.en.txt)                    |[:book:](level04/rostring/rostring.c)                     |
@@ -113,12 +113,12 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[brackets](level05/brackets/subject.en.txt)                    |[:book:](level05/brackets/brackets.c)                     |
-|[brainfuck](level05/brainfuck/subject.en.txt)                  |[:question:](level05/brainfuck/brainfuck.c)               |
-|[check_mate](level05/check_mate/subject.en.txt)                |[:question:](level05/check_mate/check_mate.c)             |
+|[brainfuck](level05/brainfuck/subject.en.txt)                  |[:x:](level05/brainfuck/brainfuck.c)                      |
+|[check_mate](level05/check_mate/subject.en.txt)                |[:x:](level05/check_mate/check_mate.c)                    |
 |[ft_itoa_base](level05/ft_itoa_base/subject.en.txt)            |[:book:](level05/ft_itoa_base/ft_itoa_base.c)             |
-|[options](level05/options/subject.en.txt)                      |[:question:](level05/options/options.c)                   |
-|[print_memory](level05/print_memory/subject.en.txt)            |[:question:](level05/print_memory/print_memory.c)         |
-|[rpn_calc](level05/rpn_calc/subject.en.txt)                    |[:question:](level05/rpn_calc/rpn_calc.c)                 |
+|[options](level05/options/subject.en.txt)                      |[:x:](level05/options/options.c)                          |
+|[print_memory](level05/print_memory/subject.en.txt)            |[:x:](level05/print_memory/print_memory.c)                |
+|[rpn_calc](level05/rpn_calc/subject.en.txt)                    |[:x:](level05/rpn_calc/rpn_calc.c)                        |
 </details>
 
 # Debug using LLDB
