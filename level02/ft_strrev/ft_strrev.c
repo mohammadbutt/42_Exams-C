@@ -6,13 +6,12 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/29 12:10:54 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/29 12:37:56 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/06/29 12:41:42 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Passed examshell*/
 
-#include <unistd.h> /*write(2)*/
-#include <stdio.h> /*printf(3)*/
+#include <stdio.h> /*printf(3) for testing*/
 
 void ft_swap(char *a, char *b)
 {
