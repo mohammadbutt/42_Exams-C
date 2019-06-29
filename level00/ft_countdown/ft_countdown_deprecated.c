@@ -5,30 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/29 11:35:30 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/29 11:54:12 by mbutt            ###   ########.fr       */
+/*   Created: 2019/05/26 20:15:08 by mbutt             #+#    #+#             */
+/*   Updated: 2019/05/26 20:23:11 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Passed examshell*/
 
-#include <unistd.h> /*write(2)*/
+#include <unistd.h> /*for wrtie(2)*/
 
-int ft_isdigit(char c)
+int main(void)
 {
-	return(c >= '0' && c <= '9');
-}
-
-void ft_countdown(char c)
-{
-	while(ft_isdigit(c))
+	char c;
+	
+	c = '9';
+	while(c >= '0' && c <= '9')
 	{
 		write(1, &c, 1);
 		c--;
 	}
 	write(1, "\n", 1);
-}
-
-int main(void)
-{
-	ft_countdown('9');
+	return(0);
 }
