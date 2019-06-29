@@ -9,9 +9,9 @@
 /*   Updated: 2019/06/27 13:38:45 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* Passed new examshell tests that checks for unsinged values that are not base
-** of 10.
-*/
+/* Passed  new examshell tests */
+/* New examshell test checks for unsinged values that are not base of 10. */
+
 #include <stdlib.h> /*malloc(3)*/
 #include <stdio.h>  /*printf(3) for testing*/
 
