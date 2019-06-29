@@ -6,13 +6,14 @@
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/21 08:56:56 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/21 09:04:31 by mbutt            ###   ########.fr       */
+/*   Updated: 2019/06/29 12:06:26 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passed examshell*/
+/*Both methods passed examshell. First one uses index. Second one uses pointer*/
 
 #include <unistd.h>
 
+/* Method 1 */
 void ft_putstr(char *str)
 {
 	int i;
@@ -22,6 +23,14 @@ void ft_putstr(char *str)
 		while(str[i])
 			write(1, &str[i++], 1);
 }
+/* Method 2 */
+void ft_putstr(char *str)
+{
+	if(str)
+		while(*str)
+			write(1, str++, 1);
+}
+
 /*
 int main(void)
 {
