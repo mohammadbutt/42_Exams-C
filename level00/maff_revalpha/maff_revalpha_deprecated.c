@@ -5,37 +5,30 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/30 09:14:02 by mbutt             #+#    #+#             */
-/*   Updated: 2019/06/30 09:26:25 by mbutt            ###   ########.fr       */
+/*   Created: 2019/05/24 09:30:47 by mbutt             #+#    #+#             */
+/*   Updated: 2019/05/24 09:45:25 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Passed examshell*/
 
-#include <unistd.h> /*write(2)*/
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int is_lower(char c)
+int main (void)
 {
-	return(c >= 'a' && c <= 'z');
-}
+	char c_lower;
+	char c_upper;
 
-int is_upper(char c)
-{
-	return(c >= 'A' && c <= 'Z');
-}
+	c_lower = 'z';
+	c_upper = 'Y';
 
-void maff_revalpha(char lower, char upper)
-{
-	while(is_lower(lower) && is_upper(upper))
+	while ((c_lower >= 'a' && c_lower <= 'z') || (c_upper >= 'A' && c_upper <= 'Z'))
 	{
-		write(1, &lower, 1);
-		write(1, &upper, 1);
-		lower = lower - 2;
-		upper = upper -2;
+		write(1, &c_lower, 1);
+		write(1, &c_upper, 1);
+		c_lower = c_lower - 2;
+		c_upper = c_upper - 2;
 	}
 	write(1, "\n", 1);
-}
-
-int main(void)
-{
-	maff_revalpha('z', 'Y');
+	return(0);
 }
