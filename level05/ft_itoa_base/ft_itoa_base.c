@@ -9,7 +9,7 @@
 /*   Updated: 2019/06/27 13:38:45 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* Passed  new examshell tests */
+/* Passed new examshell tests */
 /* New examshell test checks for unsinged values that are not base of 10. */
 
 #include <stdlib.h> /*malloc(3)*/
