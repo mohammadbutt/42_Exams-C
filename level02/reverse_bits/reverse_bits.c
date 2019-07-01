@@ -9,9 +9,9 @@
 /*   Updated: 2019/05/31 13:07:53 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Passed examshell*/
 
 #include <unistd.h>
-/*Passes examshell*/
 
 unsigned char reverse_bits(unsigned char octet)
 {
