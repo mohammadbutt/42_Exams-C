@@ -96,7 +96,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
     
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
-|[fprime](level04/fprime/subject.en.txt)                        |[:question:](level04/fprime/fprime.c)                     |
+|[fprime](level04/fprime/subject.en.txt)                        |[:book:](level04/fprime/fprime.c)                     |
 |[ft_itoa](level04/ft_itoa/subject.en.txt)                      |[:book:](level04/ft_itoa/ft_itoa.c)                       |
 |[ft_list_foreach](level04/ft_list_foreach/subject.en.txt)      |[:book:](level04/ft_list_foreach/ft_list_foreach.c) [:scroll:](level04/ft_list_foreach/ft_list.h)|
 |[ft_list_remove_if](level04/ft_list_remove_if/subject.en.txt)  |[:x:](level04/ft_list_remove_if/ft_list_remove_if.c) [:x:](level04/ft_list_remove_if/ft_list.h)|
