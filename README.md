@@ -104,6 +104,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[rev_wstr](level04/rev_wstr/subject.en.txt)                    |[:book:](level04/rev_wstr/rev_wstr.c)                     |
 |[rostring](level04/rostring/subject.en.txt)                    |[:book:](level04/rostring/rostring.c)                     |
 |[sort_int_tab](level04/sort_int_tab/subject.en.txt)            |[:book:](level04/sort_int_tab/sort_int_tab.c)             |
+|[sort_list](level04/sort_list/subject.en.txt)                  |[:x:](level04/sort_list/sort_list.c) [:scroll:](level04/sort_list/sort_list.c)|
 </details>
 
 ---
