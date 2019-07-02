@@ -50,7 +50,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[do_op](level02/do_op/subject.en.txt)                          |[:book:](level02/do_op/do_op.c)                           |
 |[ft_atoi](level02/ft_atoi/subject.en.txt)                      |[:book:](level02/ft_atoi/ft_atoi.c)                       |
 |[ft_strcmp](level02/ft_strcmp/subject.en.txt)                  |[:book:](level02/ft_strcmp/ft_strcmp.c)                   |
-|[ft_strcspn](level02/ft_strcspn/subject.en.txt)                |[:question:](level02/ft_strcspn/ft_strcspn.c)             |
+|[ft_strcspn](level02/ft_strcspn/subject.en.txt)                |[:book:](level02/ft_strcspn/ft_strcspn.c)                 |
 |[ft_strdup](level02/ft_strdup/subject.en.txt)                  |[:book:](level02/ft_strdup/ft_strdup.c)                   |
 |[ft_strpbrk](level02/ft_strpbrk/subject.en.txt)                |[:book:](level02/ft_strpbrk/ft_strpbrk.c)                 |
 |[ft_strrev](level02/ft_strrev/subject.en.txt)                  |[:book:](level02/ft_strrev/ft_strrev.c)                   |
@@ -96,7 +96,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
     
 |Problems/Subjects                                              | Code                                                     |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
-|[fprime](level04/fprime/subject.en.txt)                        |[:book:](level04/fprime/fprime.c)                     |
+|[fprime](level04/fprime/subject.en.txt)                        |[:book:](level04/fprime/fprime.c)                         |
 |[ft_itoa](level04/ft_itoa/subject.en.txt)                      |[:book:](level04/ft_itoa/ft_itoa.c)                       |
 |[ft_list_foreach](level04/ft_list_foreach/subject.en.txt)      |[:book:](level04/ft_list_foreach/ft_list_foreach.c) [:scroll:](level04/ft_list_foreach/ft_list.h)|
 |[ft_list_remove_if](level04/ft_list_remove_if/subject.en.txt)  |[:x:](level04/ft_list_remove_if/ft_list_remove_if.c) [:x:](level04/ft_list_remove_if/ft_list.h)|
