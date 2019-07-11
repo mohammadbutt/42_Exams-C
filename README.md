@@ -129,7 +129,7 @@ b main
 run
 gui
 ```
-### Finding Segmentation fault using LLDB
+### Find Segmentation fault using LLDB
 ```
 gcc filename.c
 run ./a.out
