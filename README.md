@@ -132,7 +132,8 @@ gui
 ### Find Segmentation fault using LLDB
 ```
 gcc filename.c
-run ./a.out
+lldb ./a.out
+run
 ```
 
 pressing `s` each time will progress the program 1 step forward.
