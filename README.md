@@ -129,11 +129,14 @@ b main
 run
 gui
 ```
+
+pressing `s` each time will progress the program 1 step forward.
+
 ### Find Segmentation fault using LLDB
 ```
 gcc filename.c
 lldb ./a.out
 run
 ```
-
-pressing `s` each time will progress the program 1 step forward.
+This will likely show assembly code, but it will show the name of the function which is causing segmentation fault.
+Files can be compiled mannually to see the source code in C. When I figure that out I will post it.
