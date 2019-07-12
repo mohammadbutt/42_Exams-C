@@ -139,4 +139,4 @@ lldb ./a.out
 run
 ```
 This will likely show assembly code, but it will show the name of the function which is causing segmentation fault.
-Files can be compiled mannually to see the source code in C. When I figure that out I will post it.
+Files can be compiled mannually to see the source code in C that is causing segmentation fault. When I figure that out I will post it.
