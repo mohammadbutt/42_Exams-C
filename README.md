@@ -125,6 +125,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 ### Debug using LLDB
 ```
 gcc filename.c -g
+lldb a.out
 b main
 run
 gui
