@@ -1,6 +1,8 @@
 # 42_Exams-C
 Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 
+# Beginner
+
 <details>
     <summary>Show Level 0 Questions</summary>
 
