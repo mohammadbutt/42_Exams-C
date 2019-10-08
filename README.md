@@ -137,6 +137,17 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 
 ---
 
+<details>
+    <summary>Show Level 1 Questions</summary>
+
+|Problems/Subjects                                              |Code                                                      |
+|---------------------------------------------------------------|:--------------------------------------------------------:|
+|[count_alpha](intermediate_level01/count_alpha/subject.en.txt) |[:question:](intermediate_level01/count_alpha/count_alpha.c)  |
+
+</details>
+
+---
+
 ### Debug using LLDB
 ```
 gcc filename.c -g
