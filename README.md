@@ -124,6 +124,19 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |[rpn_calc](level05/rpn_calc/subject.en.txt)                    |[:book:](level05/rpn_calc/rpn_calc.c)                     |
 </details>
 
+# Intermediate
+
+<details>
+    <summary>Show Level 0 Questions</summary>
+
+|Problems/Subjects                                              |Code                                                      |
+|---------------------------------------------------------------|:--------------------------------------------------------:|
+|[equation](intermediate_level00/equation/subject.en.txt)       |[:book:](intermediate_level00/equation/equation.c)        |
+
+</details>
+
+---
+
 ### Debug using LLDB
 ```
 gcc filename.c -g
