@@ -3,110 +3,51 @@
 /*                                                        :::      ::::::::   */
 /*   count_of_2.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
+/*   By: mbutt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/22 09:01:47 by exam              #+#    #+#             */
-/*   Updated: 2019/10/22 09:55:42 by exam             ###   ########.fr       */
+/*   Created: 2019/10/22 15:06:18 by mbutt             #+#    #+#             */
+/*   Updated: 2019/10/22 15:13:43 by mbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-
-char *ft_strcpy(char *source, char *dest)
-{
-	int i;
-	
-	i = 0;
-
-	if (dest)
-		while (dest[i])
-		{
-			source[i] = dest[i];
-			i++;
-		}
-	source[i] = '\0';
-	return(source);
-}
-
 /*
-** Count how long a numerical number is so that number can be used as an index
-** to create the string.
-*/
-int ft_numlen(int num)
-{
-	int i;
-
-	i = 0;
-	while(num)
-	{
-		num = num/10;
-		i++;
-	}
-	return(i);
-}
-
-/*
-** Since no functions are allowed for this, instead of using malloc, stack is
-** is used to allocate memory.
-** Same stack is used over and over again.
+** count_2_in_num counts how many 2s are there in a number.
+** Logic is similar to atoi. If you can do atoi, this function is relatively
+** easy to create.
 */
 
-char *ft_itoa(char str[], int num)
+int count_2_in_num(int num)
 {
-	int len;
-
-	if(num == 0)
-		return(ft_strcpy(str, "0"));
-	len = ft_numlen(num);
-	str[len] = '\0';
-	len--;
-	while(num)
-	{
-		str[len] = num % 10 + '0';
-		len--;
-		num = num/10;
-	}
-	return(str);
-}
-
-/*
-** count the number of 2s that appear in a string
-*/
-int count_2_in_array(char str[])
-{
-	int i;
 	int count;
 
-	i = 0;
 	count = 0;
 
-	if(str)
-		while(str[i])
-			if(str[i++] == '2')
-				count++;
+	if(num <= 0)
+		return(count);
+	while(num)
+	{
+		if((num % 10 + '0') == '2')
+			count++;
+		num = num / 10;
+	}
 	return(count);
 }
 
 /*
-** Since we dont have access to the main, we allocate memory for the
-** stack here.
+** This function counts all the 2s from 1 to n.
 */
-
-int    count_of_2(int n)
+int count_of_2(int n)
 {
-	char str[11];
 	int count;
 
 	count = 0;
-
 	if(n <= 0)
 		return(count);
 	while(n)
 	{
-		str[0] = '\0';
-		ft_itoa(str, n);
-		count = count + count_2_in_array(str);
+		count = count + count_2_in_num(n);
 		n--;
 	}
 	return(count);
@@ -118,33 +59,9 @@ int main(void)
 	int num;
 	int count;
 
-	num = -1;
+	num = 3;
 	count = count_of_2(num);
 
 	printf("|%d|\n", count);
-}
-*/
-
-/*
-int main(void)
-{
-
-	char str[11];
-	int num1 = 2147483647;
-
-
-	ft_itoa(str, num1);
-	printf("%s\n", str);
-
-	while(num1)
-	{
-		ft_itoa(str, num1);
-		printf("|%s|\n", str);
-		num1 = num1/10;
-	}
-	ft_itoa(str, 0);
-	printf("|%s|\n",str);
-
-	printf("|%d|\n", count_2_in_array("21342252"));
 }
 */
