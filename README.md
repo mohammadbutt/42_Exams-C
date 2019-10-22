@@ -132,6 +132,7 @@ Solutions of the C beginner exam at 42 Silicon Valley. More solutions to come
 |Problems/Subjects                                              |Code                                                      |
 |---------------------------------------------------------------|:--------------------------------------------------------:|
 |[equation](intermediate_level00/equation/subject.en.txt)       |[:book:](intermediate_level00/equation/equation.c)        |
+|[count_of_2](intermediate_level00/count_of_2/subject.en.txt)   |[:book:](intermediate_level00/count_of_2/count_of_2.c)    |
 
 </details>
 
