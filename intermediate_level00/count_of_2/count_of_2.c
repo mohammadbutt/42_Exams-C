@@ -13,6 +13,10 @@
 #include <stdio.h>
 
 /*
+** Should pass examshell.
+*/
+
+/*
 ** count_2_in_num counts how many 2s are there in a number.
 ** Logic is similar to atoi. If you can do atoi, this function is relatively
 ** easy to create.
